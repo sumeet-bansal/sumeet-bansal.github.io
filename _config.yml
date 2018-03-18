@@ -1,11 +1,11 @@
-# Site
-title: Halve
-description: Stylish, Two-Column Jekyll Theme
-url: https://taylantatli.github.io/Halve
-logo: halve.png                                       # Site logo
+# site
+title: Sumeet Bansal
+description: Hi, MTV! Welcome to my website.
+url: https://sumeet-bansal.github.io
+logo: profile.jpg
 locale: en_US
 
-# Left Block Images
+# left block images
 background:
   homepage: images/home.png                           # this image will be shown on homepage's left block
   post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
@@ -28,31 +28,31 @@ sass:
 # Google Analytics
 #google-analytics: UA-XXXXX-Y
 
-# Social Links
-#email:             email
+# social links
+email:             sumeetbansal@gmail.com
 #google.plus:        username
-twitter:            username
+twitter:            sumeetbansal21
 #facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+github:             sumeet-bansal
+#stackoverflow:     8544720/sbansal
+linkedin:          s-bansal
 #xing:              username
-#instagram:          username
-#lastfm:            username
+#instagram:          whyissumeetbansaltaken
+#lastfm:            sbansal21
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-#steam:              username
+#steam:              mrgoodbytes21
 #dribbble:          username
 #youtube:           username
-#soundcloud:        username
+#soundcloud:        sumeet-bansal-1
 #weibo:             username
 #flickr:            username
 #codepen:           username
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+#behance:           username
 
 # Gems
 gems:
@@ -60,6 +60,6 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
 
-# Exclude list
+# exclude list
 include: [_pages]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
