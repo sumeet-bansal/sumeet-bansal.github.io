@@ -10,7 +10,7 @@ layout: compress
     <div class="block-left">
       <div class="content">
         <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}"></a>
-        <h1 class="section-title">{{ page.title}}<em>/</em>
+        <h1 class="section-title">{{ page.title }}<em>/</em>
         </h1>
       </div>
     </div>
@@ -18,7 +18,7 @@ layout: compress
     <div class="block-right">
       <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
       <span class="posts-link">POSTS</span>
-      <a title="project" class="projects-menu-icon">
+      <a href="{{ site.url }}/projects" title="project" class="projects-menu-icon">
         <span></span>
       </a>
       <span class="projects-link">PROJECTS</span>
@@ -45,7 +45,6 @@ layout: compress
         </ul>
       </div>
     </div>
-    {% include overlay.html %}
     {% include scripts.html %}
   </body>
 </html>

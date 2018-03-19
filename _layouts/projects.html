@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="projects" class="inner-post-page">
+
+  <a href="{{ site.url }}" class="logo" style="padding-top: 20px; padding-left: 20px;">
+    <img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}">
+  </a>
+  <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon" id="posts-icon-projects"></a>
+  <span class="posts-link">POSTS</span>
+  <a href="{{ site.url }}/projects" title="project" class="projects-menu-icon">
+    <span></span>
+  </a>
+  <span class="projects-link">PROJECTS</span>
+  <div id="projects-block">
+    <ul class="projects-menu">
+      {% for item in site.data.projects %}
+        {% capture image %}{{ item.image }}{% endcapture %}
+        {% unless image contains 'http://' or image contains 'https://' %}
+        {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
+        {% endunless %}
+        <li style="background:url({{ image }}) center center no-repeat;">
+          <a href="{{ item.url }}" target="_blank" rel="nofollow external">
+            <span>
+              {{ item.title }}
+              {% unless item.completed %}
+              <br><em>in progress</em>
+              {% endunless %}
+            </span>
+          </a>
+          </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% include scripts.html %}
+</body>
+</html>
