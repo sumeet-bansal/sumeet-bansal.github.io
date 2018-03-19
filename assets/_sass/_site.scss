@@ -26,6 +26,30 @@
   }
 }
 
+#projects {
+  color: $overlay-color;
+  background: $overlay-color;
+}
+
+#projects-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 15px;
+  display: table;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .content {
+    height: 100%;
+  }
+  overflow: auto;
+  &.show {
+    display: block;
+  }
+}
+
 .inactive {
   pointer-events: none;
   pointer: default;
@@ -110,6 +134,7 @@ canvas {
   height: 25px;
   border: 2px solid $gray;
   background: $white;
+  z-index: 3;
   &:before {
     content: '';
     width: 20px;
@@ -139,6 +164,16 @@ canvas {
   }
 }
 
+#posts-icon-projects {
+  background: $overlay-color;
+  &:before {
+    background: $overlay-color;
+  }
+  &:after {
+    background: $overlay-color;
+  }
+}
+
 .posts-link,
 .projects-link {
   position: absolute;
@@ -153,21 +188,6 @@ canvas {
 
 .projects-link {
   right: 20px;
-}
-
-.overlay {
-  position: fixed;
-  background: $overlay-color;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  display: none;
-  overflow-y: auto;
-  &.show {
-    display: block;
-  }
 }
 
 .projects-menu {
