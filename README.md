@@ -15,7 +15,8 @@ Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vang
 + find new backgrounds and clean out default images
 + write `index.md`
 + change color scheme
-	+ [`#428bca`](https://www.color-hex.com/color/428bca) blue
-	+ [`#72cc96`](https://www.color-hex.com/color/72cc96) green (current)
-	+ [`#9966ff`](https://www.color-hex.com/color/9966ff) purple
+	+ [`#428bca`](http://www.color-hex.com/color/428bca) blue
+	+ [`#72cc96`](http://www.color-hex.com/color/72cc96) green (current)
+	+ [`#9966ff`](http://www.color-hex.com/color/9966ff) purple
 + standardize navbar across home, posts, and projects pages
++ hide scrollbar
