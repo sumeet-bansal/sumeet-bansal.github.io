@@ -27,7 +27,7 @@ layout: compress
       </div>
     </div>
 
-    <div class="block-right">
+    <div class="block-right" id="post-block">
       <div class="share-buttons">
         {% include share.html %}
       </div>
@@ -38,13 +38,19 @@ layout: compress
       </a>
       <span class="projects-link">PROJECTS</span>
       <div class="inner-post content">
-        <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
+        <div class="date-highlight">
+        {% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}
+        </div>
         {{ content }}
         <br>
         {% include share.html %}
         {% include page-pagination.html %}
       </div>
     </div>
+    <script>
+    var child = document.getElementById('post-block');
+    child.style.marginRight = (child.clientWidth - child.offsetWidth) + "px";
+    </script>
     {% include scripts.html %}
 </body>
 </html>
