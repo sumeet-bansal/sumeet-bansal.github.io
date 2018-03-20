@@ -17,7 +17,8 @@ layout: compress
       </div>
     </div>
 
-    <div class="block-right">
+    <div class="block-right" id="posts-block">
+
       <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
       <span class="posts-link">POSTS</span>
       <a href="{{ site.url }}/projects" title="project" class="projects-menu-icon">
@@ -25,7 +26,7 @@ layout: compress
       </a>
       <span class="projects-link">PROJECTS</span>
       <div class="content">
-        <ul class="posts-list">
+        <ul class="posts-list" id="posts-list">
         {% for post in site.posts %}
           <li>
             <h2>
@@ -47,6 +48,10 @@ layout: compress
         </ul>
       </div>
     </div>
+    <script>
+    var child = document.getElementById('posts-block');
+    child.style.marginRight = (child.clientWidth - child.offsetWidth) + "px";
+    </script>
     {% include scripts.html %}
   </body>
 </html>
