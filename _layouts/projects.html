@@ -7,15 +7,23 @@ layout: compress
 {% include head.html %}
 <body id="projects" class="inner-post-page">
 
-  <a href="{{ site.url }}" class="logo" style="padding-top: 20px; padding-left: 20px;">
+  <style>
+  .logo {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .projects-menu-icon, .posts-menu-icon {
+    margin-right: 20px;
+  }
+  </style>
+  <a href="{{ site.url }}" class="logo">
     <img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}" alt="logo">
   </a>
   <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon" id="posts-icon-projects"></a>
-  <span class="posts-link">POSTS</span>
   <a href="{{ site.url }}/projects" title="project" class="projects-menu-icon">
     <span></span>
   </a>
-  <span class="projects-link">PROJECTS</span>
   <div id="projects-block">
     <ul class="projects-menu">
       {% for item in site.data.projects %}
