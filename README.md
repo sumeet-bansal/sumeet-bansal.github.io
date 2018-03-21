@@ -9,7 +9,6 @@ Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vang
 	+ publish GitHub pages for projects
 + first post
 + make a nicer 404 page
-	+ change `h1::after` style to match "error" status
 + bitmoji favicon
 + fix `profile.jpg` (center and make circular)
 + find new backgrounds and clean out default images
