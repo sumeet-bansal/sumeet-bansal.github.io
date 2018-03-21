@@ -18,5 +18,3 @@ Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vang
 	+ [`#428bca`](http://www.color-hex.com/color/428bca) blue
 	+ [`#72cc96`](http://www.color-hex.com/color/72cc96) green (current)
 	+ [`#9966ff`](http://www.color-hex.com/color/9966ff) purple
-+ standardize navbar across home, posts, and projects pages
-+ hide scrollbar
