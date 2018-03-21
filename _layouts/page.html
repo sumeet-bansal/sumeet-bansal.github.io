@@ -25,7 +25,7 @@ layout: compress
       </div>
     </div>
 
-    <div class="block-right">
+    <div class="block-right" id="page-block">
       <div class="share-buttons">
         {% include share.html %}
       </div>
@@ -44,5 +44,9 @@ layout: compress
       </div>
     </div>
     {% include scripts.html %}
+    <script>
+    var child = document.getElementById('page-block');
+    child.style.marginRight = (child.clientWidth - child.offsetWidth) + "px";
+    </script>
 </body>
 </html>
