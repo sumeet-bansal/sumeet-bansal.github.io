@@ -10,7 +10,6 @@ Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vang
 + first post
 + make a nicer 404 page
 + bitmoji favicon
-+ find new backgrounds and clean out default images
 + write `index.md`
 + change color scheme
 	+ [`#428bca`](http://www.color-hex.com/color/428bca) blue
