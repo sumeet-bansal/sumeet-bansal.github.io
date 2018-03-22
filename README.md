@@ -6,7 +6,6 @@ Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vang
 
 ### TODO
 + publish GitHub pages and add images for projects
-+ first post
 + make a nicer 404 page
 + bitmoji favicon
 + write `index.md`
