@@ -1,29 +1,29 @@
-- title: Halve Jekyll Theme
-  url: http://taylantatli.me/Halve
-  image: http://taylantatli.me/Halve/images/halve-home-image.png
+- title: last.fm spelunker
+  url: http://github.com/sumeet-bansal/last.fm-spelunker
+  image: /images/streamgraph.png
   completed: false
 
-- title: Moon Jekyll Theme
-  url: http://taylantatli.me/Moon
-  image: https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
+- title: Triton Meal Planner
+  url: http://tritonmealplanner.herokuapp.com
+  image:
   completed: true
 
-- title: Ramme Jekyll Theme
-  url: http://taylantatli.me/Ramme
-  image: https://raw.githubusercontent.com/TaylanTatli/Ramme/master/assets/img/screenshot-post.png
+- title: Reddit Bots
+  url: https://github.com/sumeet-bansal/reddit-bots
+  image:
   completed: true
 
-- title: Daisy Pelican Theme
-  url: http://taylantatli.me/Daisy-Pelican-Theme/
-  image: https://raw.githubusercontent.com/TaylanTatli/Daisy-Pelican-Theme/master/Preview-1.png
+- title: Triton Scheduler
+  url: https://github.com/sumeet-bansal/triton-scheduler
+  image:
   completed: true
 
-- title: Block Icon Theme
-  url: https://github.com/TaylanTatli/Block-Icon-Theme
-  image: https://raw.githubusercontent.com/TaylanTatli/Block-Icon-Theme/master/Preview.png
+- title: 3.5mm
+  url: http://github.com/sumeet-bansal/3.5mm
+  image:
   completed: false
 
-- title: Start Page
-  url: http://taylantatli.me/StartPage/
-  image: https://raw.githubusercontent.com/TaylanTatli/StartPage/master/preview.png
-  completed: false
+- title: Lighthouse
+  url: https://github.com/sumeet-bansal/lighthouse
+  image:
+  completed: true

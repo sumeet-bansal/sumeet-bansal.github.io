@@ -5,8 +5,7 @@ My personal website. Under construction.
 Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
 
 ### TODO
-+ sub out projects
-	+ publish GitHub pages for projects
++ publish GitHub pages and add images for projects
 + first post
 + make a nicer 404 page
 + bitmoji favicon
