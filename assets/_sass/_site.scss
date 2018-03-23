@@ -311,6 +311,7 @@ canvas {
   font: 0/0 verdana;
   color: transparent;
   text-shadow: none;
+  border-radius: 5%;
 }
 
 .main-info,
@@ -466,6 +467,10 @@ canvas {
       max-width: 800px;
     }
   }
+  overflow-x: hidden;
+}
+
+#posts, #projects {
   .logo {
     top: 20px;
     left: 20px;
@@ -478,7 +483,6 @@ canvas {
       display: none;
     }
   }
-  overflow-x: hidden;
 }
 
 .section-title {
