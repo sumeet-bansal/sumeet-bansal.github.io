@@ -2,14 +2,16 @@
 
 My personal website. Under construction.
 
-Currently uses [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+Made using a modified version of [this Jekyll port](https://github.com/TaylanTatli/Halve) of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
 
 ### TODO
 + publish GitHub pages and add images for projects
 + make a nicer 404 page
 + bitmoji favicon
 + write `index.md`
-+ change color scheme
-	+ [`#428bca`](http://www.color-hex.com/color/428bca) blue
-	+ [`#72cc96`](http://www.color-hex.com/color/72cc96) green (current)
-	+ [`#9966ff`](http://www.color-hex.com/color/9966ff) purple
++ replace `/projects` with a web-based resume (with link to PDF)
+  + leaning towards [the online-cv Jekyll theme](https://github.com/sharu725/online-cv)
+  + alternatives: [this more minimalist Jekyll theme](https://github.com/philipithomas/jekyll-resume) or [this more icon-based Jekyll theme](https://github.com/aviaryan/resume)
++ add tracking code for Google Analytics
++ change `mailto` on home page to copying to clipboard
++ add a `robots.txt` file
