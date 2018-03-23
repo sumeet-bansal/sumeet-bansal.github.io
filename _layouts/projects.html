@@ -15,7 +15,7 @@ layout: compress
   }
   </style>
   <a href="{{ site.url }}" class="logo" style="width: 50px; height: auto;">
-    <img src="{{ site.url }}/images/{{ site.logo }}" alt="logo" style="border-radius: 5%;">
+    <img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}" alt="logo" style="border-radius: 5%;">
   </a>
   <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon" id="posts-icon-projects"></a>
   <a href="{{ site.url }}/projects" title="project" class="projects-menu-icon">
