@@ -2,7 +2,7 @@
 layout: post
 title:  "Initial Commit"
 date:   2018-03-21
-excerpt: "Obligatory first post."
+excerpt: "(obligatory first post)"
 tag:
 - internal
 - technical
@@ -212,6 +212,16 @@ Pretty self-explanatory. The pages had different "navbars": the home page indica
       updated post layout with hidden scrollbar
     </td>
   </tr>
+  <tr>
+    <td class="sha">
+      <a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/79f4a017ec65077a04058601825efc3f4358072a">
+        79f4a01
+      </a>
+    </td>
+    <td class="message">
+      hid horizontal scrollbars
+    </td>
+  </tr>
 </table>
 
 One thing I noticed with the original theme was that when going from the home page to the posts page or an individual post, the icons on the top right would shift slightly left. I realized that was because of the scrollbar throwing off the icons' offsets, so I decided to hide the scrollbars (while still maintaining the ability to scroll, of course). This was pretty easy via `::-webkit-scrollbar`, but the problem is that that only works on browsers that support `webkit` (e.g. Chrome and Safari) and browsers that didn't (e.g. Firefox and Edge) still had the scrollbars and the shifting icon issue. I found [this Stack Overflow post](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll) pretty helpful; basically, it was just adding this snippet of JavaScript to each affected HTML file:
@@ -219,7 +229,7 @@ One thing I noticed with the original theme was that when going from the home pa
 var block = document.getElementById('affected-block');
 block.style.marginRight = (block.clientWidth - block.offsetWidth) + "px";
 ```
-What that does is add a `margin-right` style rule to the affected block, where `margin-right` equals the number of pixels the scrollbar takes up, essentially moving the entire block some `n` pixels right and hiding the scrollbar off-screen. It's not a perfect solution but it certainly solves the shifting icon issue, so I suppose it's good enough (for now).
+What that does is add a `margin-right` style rule to the affected block, where `margin-right` equals the number of pixels the scrollbar takes up, essentially moving the entire block some `n` pixels right and hiding the scrollbar off-screen. Of course, this creates a horizontal scrollbar since the vertical scrollbar is now off-screen, but the horizontal scrollbar can be easily hidden with no issues via the `overflow-x: hidden` rule.
 
 ## pt. 2
 #### relevant commits
@@ -275,9 +285,39 @@ What that does is add a `margin-right` style rule to the affected block, where `
       cleaned out placeholder posts
     </td>
   </tr>
+  <tr>
+    <td class="sha">
+      <a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/3b9626c42a21be4eae50a4a379dcceb0bd4422f8">
+        3b9626c
+      </a>
+    </td>
+    <td class="message">
+      cleaned up styling and updated color scheme
+    </td>
+  </tr>
+  <tr>
+    <td class="sha">
+      <a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/91a65685c0145f538d95343c5f1a433e1aeb3dfb">
+        91a656
+      </a>
+    </td>
+    <td class="message">
+      updated layouts with profile-small for faster loading
+    </td>
+  </tr>
+  <tr>
+    <td class="sha">
+      <a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/ba61c3cfb549010b70628a2d562666abfb937ad7">
+        ba61c3c
+      </a>
+    </td>
+    <td class="message">
+      cleaned up inline styling and scripting
+    </td>
+  </tr>
 </table>
 
-More just making the site mine. The commit messages seem pretty self-explanatory.
+More housekeeping and just making the site mine. The commit messages seem pretty self-explanatory.
 
 ## conclusion
 For anyone who bothered reading this far, I'm still not entirely sure what this website is for, but I'm sure I'll figure it out at some point. At the very least, I can put "portfolio" type stuff like my personal projects, and I applied for a slot at KSDT (UCSD's college radio), so it might be cool to post my weekly playlists as blog posts&mdash;assuming I do get a slot. We'll see, I guess?
