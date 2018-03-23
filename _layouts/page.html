@@ -10,7 +10,7 @@ layout: compress
     <div class="block-left">
       <div class="content">
         <a href="{{ site.url }}" class="logo">
-          <img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}" style="border-radius: 5%;">
+          <img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}">
         </a>
         <div class="post-title-section">
           <div class="section-line">Posts <em>/</em></div>
@@ -27,7 +27,7 @@ layout: compress
       </div>
     </div>
 
-    <div class="block-right" id="page-block">
+    <div class="block-right">
       <div class="share-buttons">
         {% include share.html %}
       </div>
@@ -46,9 +46,6 @@ layout: compress
       </div>
     </div>
     {% include scripts.html %}
-    <script>
-    var child = document.getElementById('page-block');
-    child.style.marginRight = (child.clientWidth - child.offsetWidth) + "px";
-    </script>
+    {% include scrollbars.html %}
 </body>
 </html>
