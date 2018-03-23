@@ -12,6 +12,5 @@ Made using a modified version of [this Jekyll port](https://github.com/TaylanTat
 + replace `/projects` with a web-based resume (with link to PDF)
   + leaning towards [the online-cv Jekyll theme](https://github.com/sharu725/online-cv)
   + alternatives: [this more minimalist Jekyll theme](https://github.com/philipithomas/jekyll-resume) or [this more icon-based Jekyll theme](https://github.com/aviaryan/resume)
-+ add tracking code for Google Analytics
 + change `mailto` on home page to copying to clipboard
 + add a `robots.txt` file
