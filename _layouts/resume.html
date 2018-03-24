@@ -1,0 +1,225 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<head>
+	<link rel="stylesheet" href="{{ site.url }}/assets/plugins/bootstrap/css/bootstrap.min.css">   
+	<link rel="stylesheet" href="{{ site.url }}/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link id="theme-style" rel="stylesheet" href="{{ site.url }}/assets/css/resume.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="sidebar-wrapper">
+
+			<div class="profile-container">
+
+				<img class="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
+
+				{% if site.name %}
+				<h1 class="name">{{ site.name }}</h1>
+				{% endif %}
+
+				{% if site.tagline %}
+				<h3 class="tagline">{{ site.tagline }}</h3>
+				{% endif %}
+
+			</div>
+
+			<div class="contact-container container-block">
+				<ul class="list-unstyled contact-list">
+
+					{% if site.email %}
+					<li class="email">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto: {{ site.email }}">{{ site.email }}</a>
+					</li>
+					{% endif %}
+
+					{% if site.phone %}
+					<li class="phone">
+						<i class="fa fa-phone"></i>
+						<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+					</li>
+					{% endif %}
+
+					{% if site.url %}
+					<li class="website">
+						<i class="fa fa-globe"></i>
+						<a href="{{ site.url }}" target="_blank">{{ site.url }}</a>
+					</li>
+					{% endif %}
+
+					{% if site.linkedin %}
+					<li class="linkedin">
+						<i class="fa fa-linkedin"></i>
+						<a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank">{{ site.linkedin }}</a>
+					</li>
+					{% endif %}
+
+					{% if site.github %}
+					<li class="github">
+						<i class="fa fa-github"></i>
+						<a href="http://github.com/{{ site.github }}" target="_blank">{{site.github}}</a>
+					</li>
+					{% endif %}
+
+				</ul>
+			</div>
+
+			{% if site.data.languages %}
+			<!-- div class="languages-container container-block">
+				<h2 class="container-block-title">Languages</h2>
+				<ul class="list-unstyled interests-list">
+					{%for language in site.data.languages %}
+					<li>{{ language.idiom }} <span class="lang-desc">({{ language.level }})</span></li>
+					{% endfor %}
+				</ul>
+			</div -->
+			{% endif %}
+
+		</div>
+
+		<div class="main-wrapper">
+
+			<section class="section education-section">
+				<h2 class="section-title">
+					<i class="fa fa-graduation-cap"></i>
+					Education
+				</h2>
+
+				{% for edu in site.data.educations %}
+				<div class="item">
+
+					<div class="meta">
+						<div class="upper-row">
+							<h3 class="degree">{{ edu.degree }}</h3>
+							<div class="time">{{ edu.time }}</div>
+						</div>
+						<div class="university">{{ edu.university }}</div>
+					</div>
+
+					{% if edu.details %}
+					<div class="details">
+						<p>{{ edu.details }}</p>
+					</div>
+					{% endif %}
+
+				</div>
+				{% endfor %}
+
+			</section>
+
+			<section class="section experience-section">
+				<h2 class="section-title">
+					<i class="fa fa-briefcase"></i>
+					Experience
+				</h2>
+
+				{% for exp in site.data.experiences %}
+				<div class="item">
+
+					<div class="meta">
+						<div class="upper-row">
+							<h3 class="job-title">{{ exp.role }}</h3>
+							<div class="time">{{ exp.time }}</div>
+						</div>
+						<div class="company">{{ exp.company }}</div>
+					</div>
+
+					{% if exp.details %}
+					<div class="details">
+						<p>{{ exp.details }}</p>
+					</div>
+					{% endif %}
+
+				</div>
+				{% endfor %}
+
+			</section>
+
+			<section class="section projects-section">
+					<h2 class="section-title">
+						<i class="fa fa-archive"></i>
+						Projects
+					</h2>
+
+					{% if site.data.projects.intro %}
+					<div class="intro">
+						<p>{{ site.data.projects.intro }}</p>
+					</div>
+					{% endif %}
+
+					{% for project in site.data.projects.projects %}
+					<div class="item">
+						<span class="project-title">
+							<a href="{{ project.link }}">{{ project.title }}</a>
+						</span>
+
+						{% if project.tagline %}
+						<span class="project-tagline">{{ project.tagline }}</span>
+						{% endif %}
+
+					</div>
+					{% endfor %}
+
+			</section>
+
+			<section class="section publications-section">
+				<h2 class="section-title">
+					<i class="fa fa-file-text"></i>
+					Publications
+				</h2>
+
+				{% if site.data.publications.intro %}
+				<div class="intro">
+					<p>{{ site.data.publications.intro }}</p>
+				</div>
+				{% endif %}
+
+				{% for publication in site.data.publications.publications %}
+				<div class="item">
+					<div class="publication-title">{{ publication.title }}</div>
+					<div class="publication-authors">{{ publication.authors }}</div>
+					<div class="publication-conference">{{ publication.conference }}</div>
+				</div>
+				{% endfor %}
+
+			</section>
+
+			<section class="skills-section section">
+				<h2 class="section-title">
+					<i class="fa fa-rocket"></i>
+					Skills &amp; Proficiency
+				</h2>
+
+				<div class="skillset">
+
+					{% for skill in site.data.skills %}
+					<div class="item">
+						<h3 class="level-title">{{ skill.name }}</h3>
+						<div class="level-bar">
+							<div class="level-bar-inner" data-level="{{ skill.level }}">
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+
+				</div>
+
+			</section>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+	<script type="text/javascript" src="{{ site.url }}/assets/js/resume.js"></script> 
+
+	{% include scripts.html %}
+
+</body>
+</html> 
