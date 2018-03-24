@@ -5,6 +5,10 @@ url: https://sumeet-bansal.github.io
 logo: profile.png
 locale: en_US
 
+# resume
+name: Sumeet Bansal
+tagline: Student Developer
+
 # left block images
 background:
   homepage: images/home.png
@@ -53,6 +57,7 @@ linkedin:          s-bansal
 #xmpp:              username@server.com
 #hackernews:        username
 #behance:           username
+phone: 1 (408) 250-3097
 
 # Gems
 gems:
