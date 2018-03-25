@@ -10,7 +10,8 @@ Made using a modified version of [this Jekyll port](https://github.com/TaylanTat
 + bitmoji favicon
 + write `index.md`
 + replace `/projects` with a web-based resume (with link to PDF)
-  + leaning towards [the online-cv Jekyll theme](https://github.com/sharu725/online-cv)
-  + alternatives: [this more minimalist Jekyll theme](https://github.com/philipithomas/jekyll-resume) or [this more icon-based Jekyll theme](https://github.com/aviaryan/resume)
+	+ style `/resume`
+		+ use [`konpa/devicon`](https://konpa.github.io/devicon/)
+	+ merge `/resume` with rest of project structure
 + change `mailto` on home page to copying to clipboard
 + add a `robots.txt` file

@@ -219,7 +219,6 @@ layout: compress
 					<div class="meta">
 						<div class="upper-row">
 							<h3 class="company">{{ exc.org }}</h3>
-							<div class="location">{{ exc.location }}</div>
 						</div>
 					</div>
 
@@ -276,22 +275,14 @@ layout: compress
 
 				<div class="skillset">
 
-					<h3 class="company">Languages</h3>
+					<h3 id="languages">Languages</h3>
 					<div class="details">
-						<ul>
-							{% for lang in site.data.resume.skills.languages %}
-							<li>{{ lang.name }}</li>
-							{% endfor %}
-						</ul>
+					{{ site.data.resume.skills.languages }}
 					</div>
 
-					<h3 class="company">Technologies/Frameworks</h3>
+					<h3 id="technologies">Technologies/Frameworks</h3>
 					<div class="details">
-						<ul>
-							{% for tech in site.data.resume.skills.technologies %}
-							<li>{{ tech.name }}</li>
-							{% endfor %}
-						</ul>
+					{{ site.data.resume.skills.technologies }}
 					</div>
 
 				</div>
