@@ -6,9 +6,8 @@ layout: compress
 <html>
 {% include head.html %}
 <head>
-	<link rel="stylesheet" href="{{ site.url }}/assets/plugins/bootstrap/css/bootstrap.min.css">   
-	<link rel="stylesheet" href="{{ site.url }}/assets/plugins/font-awesome/css/font-awesome.min.css">
-	<link id="theme-style" rel="stylesheet" href="{{ site.url }}/assets/css/resume.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/resume.css">
 </head>
 
 <body>
@@ -85,13 +84,14 @@ layout: compress
 
 		<div class="main-wrapper">
 
+		{% if site.data.resume.education %}
 			<section class="section education-section">
 				<h2 class="section-title">
 					<i class="fa fa-graduation-cap"></i>
 					Education
 				</h2>
 
-				{% for edu in site.data.educations %}
+				{% for edu in site.data.resume.education %}
 				<div class="item">
 
 					<div class="meta">
@@ -102,9 +102,21 @@ layout: compress
 						<div class="university">{{ edu.university }}</div>
 					</div>
 
-					{% if edu.details %}
-					<div class="details">
-						<p>{{ edu.details }}</p>
+					{% if edu.coursework %}
+					<div class="coursework">
+						Provost Honors. Relevant Coursework:
+						<table>
+							{% for course in edu.coursework %}
+							<tr>
+								<td class="course-id">
+									{{ course.id }}
+								</td>
+								<td class="course-title">
+									{{ course.title }}
+								</td>
+							</tr>
+							{% endfor %}
+						</table>
 					</div>
 					{% endif %}
 
@@ -112,75 +124,139 @@ layout: compress
 				{% endfor %}
 
 			</section>
+			{% endif %}
 
+			{% if site.data.resume.experience %}
 			<section class="section experience-section">
 				<h2 class="section-title">
 					<i class="fa fa-briefcase"></i>
 					Experience
 				</h2>
 
-				{% for exp in site.data.experiences %}
+				{% for exp in site.data.resume.experience %}
 				<div class="item">
 
 					<div class="meta">
 						<div class="upper-row">
-							<h3 class="job-title">{{ exp.role }}</h3>
-							<div class="time">{{ exp.time }}</div>
+							<h3 class="company">{{ exp.company }}</h3>
+							<div class="location">{{ exp.location }}</div>
 						</div>
-						<div class="company">{{ exp.company }}</div>
 					</div>
 
-					{% if exp.details %}
+					{% for role in exp.roles %}
+					<div class="meta">
+						<div class="lower-row">
+							<div class="job-title">{{ role.title }}</div>
+							<div class="time">{{ role.time }}</div>
+						</div>
+					</div>
+
+					{% if role.details %}
 					<div class="details">
-						<p>{{ exp.details }}</p>
+						<ul>
+							{% for bullet in role.details %}
+							<li>{{ bullet.text }}</li>
+							{% endfor %}
+						</ul>
 					</div>
 					{% endif %}
+
+					{% endfor %}
 
 				</div>
 				{% endfor %}
 
 			</section>
+			{% endif %}
 
+			{% if site.data.resume.projects %}
 			<section class="section projects-section">
 					<h2 class="section-title">
-						<i class="fa fa-archive"></i>
+						<i class="fa fa-code"></i>
 						Projects
 					</h2>
 
-					{% if site.data.projects.intro %}
-					<div class="intro">
-						<p>{{ site.data.projects.intro }}</p>
-					</div>
-					{% endif %}
-
-					{% for project in site.data.projects.projects %}
+					{% for project in site.data.resume.projects %}
 					<div class="item">
 						<span class="project-title">
 							<a href="{{ project.link }}">{{ project.title }}</a>
 						</span>
 
-						{% if project.tagline %}
-						<span class="project-tagline">{{ project.tagline }}</span>
+						{% if project.details %}
+						<div class="details">
+							<ul>
+								{% for bullet in project.details %}
+								<li>{{ bullet.text }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+						{% endif %}
+
+						{% if project.stack %}
+						<div class="tech-stack">
+						{% for technology in project.stack %}
+						<p>{{ technology.name }}</p>
+						{% endfor %}
+						</div>
 						{% endif %}
 
 					</div>
 					{% endfor %}
 
 			</section>
+			{% endif %}
 
+			{% if site.data.resume.extracurriculars %}
+			<section class="section extracurriculars-section">
+				<h2 class="section-title">
+					<i class="fa fa-cogs"></i>
+					Extracurricular Activities
+				</h2>
+
+				{% for exc in site.data.resume.extracurriculars %}
+				<div class="item">
+
+					<div class="meta">
+						<div class="upper-row">
+							<h3 class="company">{{ exc.org }}</h3>
+							<div class="location">{{ exc.location }}</div>
+						</div>
+					</div>
+
+					{% for role in exc.roles %}
+					<div class="meta">
+						<div class="lower-row">
+							<div class="job-title">{{ role.title }}</div>
+							<div class="time">{{ role.time }}</div>
+						</div>
+					</div>
+
+					{% if role.details %}
+					<div class="details">
+						<ul>
+							{% for bullet in role.details %}
+							<li>{{ bullet.text }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
+
+					{% endfor %}
+
+				</div>
+				{% endfor %}
+
+			</section>
+			{% endif %}
+
+			{% if site.data.resume.publications %}
 			<section class="section publications-section">
 				<h2 class="section-title">
 					<i class="fa fa-file-text"></i>
 					Publications
 				</h2>
 
-				{% if site.data.publications.intro %}
-				<div class="intro">
-					<p>{{ site.data.publications.intro }}</p>
-				</div>
-				{% endif %}
-
-				{% for publication in site.data.publications.publications %}
+				{% for publication in site.data.resume.publications %}
 				<div class="item">
 					<div class="publication-title">{{ publication.title }}</div>
 					<div class="publication-authors">{{ publication.authors }}</div>
@@ -189,34 +265,45 @@ layout: compress
 				{% endfor %}
 
 			</section>
+			{% endif %}
 
+			{% if site.data.resume.skills %}
 			<section class="skills-section section">
 				<h2 class="section-title">
 					<i class="fa fa-rocket"></i>
-					Skills &amp; Proficiency
+					Skills &amp; Qualifications
 				</h2>
 
 				<div class="skillset">
 
-					{% for skill in site.data.skills %}
-					<div class="item">
-						<h3 class="level-title">{{ skill.name }}</h3>
-						<div class="level-bar">
-							<div class="level-bar-inner" data-level="{{ skill.level }}">
-							</div>
-						</div>
+					<h3 class="company">Languages</h3>
+					<div class="details">
+						<ul>
+							{% for lang in site.data.resume.skills.languages %}
+							<li>{{ lang.name }}</li>
+							{% endfor %}
+						</ul>
 					</div>
-					{% endfor %}
+
+					<h3 class="company">Technologies/Frameworks</h3>
+					<div class="details">
+						<ul>
+							{% for tech in site.data.resume.skills.technologies %}
+							<li>{{ tech.name }}</li>
+							{% endfor %}
+						</ul>
+					</div>
 
 				</div>
 
 			</section>
+			{% endif %}
 
 		</div>
 	</div>
 
-	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="{{ site.url }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+	<script type="text/javascript" src="{{ site.url }}/assets/js/src/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/bootstrap.min.js"></script>    
 	<script type="text/javascript" src="{{ site.url }}/assets/js/resume.js"></script> 
 
 	{% include scripts.html %}

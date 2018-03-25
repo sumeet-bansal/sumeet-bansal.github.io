@@ -1,0 +1,179 @@
+languages:
+  - language:
+    idiom: English
+    level: Native
+  - language:
+    idiom: French
+    level: Professional
+  - language:
+    idiom: Spanish
+    level: Professional
+
+interests:
+  - interest:
+    item: Climbing
+    link:
+  - interest:
+    item: Snowboarding
+    link:
+  - interest:
+    item: Cooking
+    link:
+
+education:
+  - edu:
+    degree: Mathematics-Computer Science, BS
+    university: University of California, San Diego
+    time: 2016 - 2019
+    description: Provost Honors.
+    coursework:
+      - course:
+        id: CSE 30
+        title: Computer Organization and Systems Programming
+      - course:
+        id: CSE 100
+        title: Advanced Data Structures
+      - course:
+        id: CSE 101
+        title: Design and Analysis of Algorithms
+      - course:
+        id: CSE 105
+        title: Theory of Computability
+      - course:
+        id: ECE 140
+        title: The Art of Product Engineering
+      - course:
+        id: MATH 189
+        title: Exploratory Data Analysis
+
+experience:
+  - exp:
+    company: Actiance
+    location: Redwood City, CA
+    roles:
+    - role:
+      title: Product Management Intern
+      time: June 2017 - September 2017
+      details:
+        - bullet:
+          text: Worked with Program Management to migrate programs to the BigPicture application for improved risk assessment, swim lane progress updates and milestone planning.
+    - role:
+      title: Engineering R&D Intern
+      time: June 2017 - September 2017
+      details:
+        - bullet:
+          text: Led a team of three interns in developing an independent anomaly detection project.
+        - bullet:
+          text: Developed a diagnostic service that significantly shortened development and deployment cycles by ensuring parity across multiple product sites' server configurations.
+        - bullet:
+          text: Automated processes for generating data stores of entire product sites' server configurations.
+        - bullet:
+          text: Created a flexible MongoDB-based query engine that generates detailed statistical server analyses and later migrated the entire project to a fully functional SQL-based implementation.
+        - bullet:
+          text: Integrated the query engine with a responsive web interface using AngularJS interacting with a Java servlet.
+        - bullet:
+          text: Oversaw company-wide deployment and adoption across different teams, domestic and international (e.g. Engineering, Network Operations, QA).
+        - bullet:
+          text: Presented well-received demos to many senior executives, including the CEO. Incorporated feedback and added requested functionality for specific use cases.
+  - exp:
+    company: Zscaler
+    location: San Jose, CA
+    roles:
+      - role:
+        title: Emerging Technologies Intern
+        time: June 2015 - August 2015
+        details:
+          - bullet:
+            text: Developed a web visualization of global cyberthreats using live server data.
+          - bullet:
+            text: Processed server data stream and systematically classified and prioritized various cyberthreats.
+          - bullet:
+            text: Used the Google Maps API to project parsed threat data onto a constantly-updating map.
+
+projects:
+  - project:
+    title: last.fm spelunker
+    link: https://github.com/sumeet-bansal/last.fm-spelunker
+    details:
+      - bullet:
+        text: Generates an exhaustive SQL database of a user's listening history and related info through the last.fm API.
+      - bullet:
+        text: Identifies historical patterns in listening habits (e.g. seasonal preferences for artists or genres).
+      - bullet:
+        text: Graphs listening statistics, long-term trends (through streamgraphs), and connections between related artists (through hierarchical edge bundles) using the D3.js data visualization library.
+  - project:
+    title: Triton Scheduler
+    link: https://github.com/sumeet-bansal/triton-scheduler
+    details:
+      - bullet:
+        text: A Chrome extension to easily populate Google Calendars with a user's academic schedule for the quarter.
+      - bullet:
+        text: Uses web scraping to parse and clean schedule data from the online WebReg class registration tool.
+      - bullet:
+        text: Handles the user authentication and authorization process through the OAuth 2.0 protocol.
+      - bullet:
+        text: Adds all academic events from the registration tool to Google Calendar via the Google Calendar API.
+
+#publications:
+#  - paper:
+#    title: The Art of Computer Programming
+#    authors: Donald E. Knuth
+#    conference: Addison-Wesley, 1968
+
+extracurriculars:
+  - extracurricular:
+    org: Students for the Exploration and Discovery of Space (SEDS)
+    location: San Diego, CA
+    roles:
+      - role:
+        title: Webmaster
+        time: January 2018 - Present
+        details:
+          - bullet:
+            text: Responsible for the design and maintenance of the organization's website (sedsucsd.org).
+      - role:
+        title: Software Developer
+        time: September 2017 - March 2018
+        details:
+          - bullet:
+            text: Member of the Colossus project, a NASA-funded static fire test stand having a net worth of $330,000.
+          - bullet:
+            text: Worked on the data acquisition system to automate the sequence of actions required to obtain reliable thrust readings, design a highly-redundant system with numerous background and safety checks, and develop data loggers and a responsive user interface.
+          - bullet:
+            text: Set up a web server and local website to enable real-time monitoring of the Colossus system.
+
+skills:
+  languages:
+  - lang:
+    name: Java
+  - lang:
+    name: Python
+  - lang:
+    name: C
+  - lang:
+    name: C++
+  - lang:
+    name: SQL
+  - lang:
+    name: JavaScript
+  - lang:
+    name: R
+  - lang:
+    name: ARM Assembly
+  - lang:
+    name: Shell
+  technologies:
+  - tech:
+    name: MongoDB
+  - tech:
+    name: Node.js
+  - tech:
+    name: Express.js
+  - tech:
+    name: D3.js
+  - tech:
+    name: Django
+  - tech:
+    name: Flask
+  - tech:
+    name: Git
