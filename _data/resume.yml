@@ -130,7 +130,7 @@ extracurriculars:
         time: January 2018 - Present
         details:
           - bullet:
-            text: Responsible for the design and maintenance of the organization's website (sedsucsd.org).
+            text: Responsible for the design and maintenance of the organization's website (<a href="https://sedsucsd.org">sedsucsd.org</a>).
       - role:
         title: Software Developer
         time: September 2017 - March 2018
@@ -143,37 +143,5 @@ extracurriculars:
             text: Set up a web server and local website to enable real-time monitoring of the Colossus system.
 
 skills:
-  languages:
-  - lang:
-    name: Java
-  - lang:
-    name: Python
-  - lang:
-    name: C
-  - lang:
-    name: C++
-  - lang:
-    name: SQL
-  - lang:
-    name: JavaScript
-  - lang:
-    name: R
-  - lang:
-    name: ARM Assembly
-  - lang:
-    name: Shell
-  technologies:
-  - tech:
-    name: MongoDB
-  - tech:
-    name: Node.js
-  - tech:
-    name: Express.js
-  - tech:
-    name: D3.js
-  - tech:
-    name: Django
-  - tech:
-    name: Flask
-  - tech:
-    name: Git
+  languages: Java, Python, C, C++, JavaScript, SQL, R, ARM Assembly, Shell
+  technologies: MongoDB, Node.js, Express.js, D3.js, Django, Flask, Git

@@ -38,6 +38,12 @@ a:hover {
 a:focus {
   text-decoration: none;
 }
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  color: #2d7788;
+}
 p {
   line-height: 1.5;
 }
@@ -137,9 +143,13 @@ p {
   margin-bottom: 0;
 }
 .main-wrapper {
-  background: #fff;
+  background: #ffffff;
   padding: 60px;
   padding-right: 340px;
+}
+.main-wrapper ul,
+.main-wrapper ol {
+  margin-bottom: 0px;
 }
 .main-wrapper .section-title {
   font-size: 24px;
@@ -147,7 +157,7 @@ p {
   color: #2d7788;
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   bottom: 0px;
   left: 0px;
 }
@@ -156,7 +166,7 @@ p {
   height: 30px;
   margin-right: 8px;
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -199,7 +209,7 @@ p {
 }
 .main-wrapper .experience-section .item,
 .main-wrapper .education-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .main-wrapper .upper-row {
   position: relative;
@@ -209,27 +219,25 @@ p {
 .main-wrapper .lower-row {
   position: relative;
   overflow: hidden;
+  margin-top: 5px;
 }
 
+.main-wrapper .degree,
 .main-wrapper .company,
-.main-wrapper .degree {
+.main-wrapper .project-title,
+.main-wrapper .skillset h3 {
   color: #3F4650;
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
 }
+
 .main-wrapper .location,
 .main-wrapper .time {
   position: absolute;
   right: 0;
   top: 0;
-  color: #97AAC3;
-}
-.main-wrapper .job-title,
-.main-wrapper .university {
-  margin-bottom: 10px;
-  color: #97AAC3;
 }
 
 .main-wrapper ul {
@@ -237,7 +245,6 @@ p {
 }
 
 .main-wrapper .project-title {
-  font-size: 16px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
@@ -267,29 +274,8 @@ p {
   margin-bottom: 15px;
   overflow: hidden;
 }
-.skillset .level-title {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-.skillset .level-bar {
-  height: 12px;
-  background: #f5f5f5;
-}
-.skillset .level-bar-inner {
-  height: 12px;
-  background: #7bc2d3;
-}
-.footer {
-  padding-top: 30px;
-}
-.footer .copyright {
-  line-height: 1.6;
-  color: #545E6C;
-  font-size: 13px;
-}
-.footer .fa-heart {
-  color: #fb866a;
+.skillset #technologies {
+  padding-top: 10px;
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
@@ -306,29 +292,8 @@ p {
   .main-wrapper .time {
     position: static;
     display: block;
-    margin-top: 5px;
   }
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
 }
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .skillset .level-title {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    margin-bottom: 0;
-  }
-  .skillset .level-bar {
-    display: inline-block;
-    width: 70%;
-    float: left;
-    position: relative;
-    top: 1px;
-  }
-}
-/* Large devices (large desktops, 1200px and up) */
-/* Ex-Large devices (large desktops, 1200px and up) */
-/* styles.css */
