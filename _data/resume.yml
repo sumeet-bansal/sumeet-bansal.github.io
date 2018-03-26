@@ -1,25 +1,3 @@
-languages:
-  - language:
-    idiom: English
-    level: Native
-  - language:
-    idiom: French
-    level: Professional
-  - language:
-    idiom: Spanish
-    level: Professional
-
-interests:
-  - interest:
-    item: Climbing
-    link:
-  - interest:
-    item: Snowboarding
-    link:
-  - interest:
-    item: Cooking
-    link:
-
 education:
   - edu:
     degree: Mathematics-Computer Science, BS
@@ -40,15 +18,21 @@ education:
         id: CSE 105
         title: Theory of Computability
       - course:
+        id: CSE 170
+        title: Interaction Design
+      - course:
         id: ECE 140
         title: The Art of Product Engineering
       - course:
+        id: MATH 184
+        title: Combinatorics and Graph Theory
+      - course:
         id: MATH 189
-        title: Exploratory Data Analysis
+        title: Exploratory Data Analysis and Inference
 
 experience:
   - exp:
-    company: Actiance
+    org: Actiance
     location: Redwood City, CA
     roles:
     - role:
@@ -62,7 +46,7 @@ experience:
       time: June 2017 - September 2017
       details:
         - bullet:
-          text: Led a team of three interns in developing an independent anomaly detection project.
+          text: Led a team of three interns in developing <a href="https://github.com/sumeet-bansal/lighthouse">an independent anomaly detection project</a>.
         - bullet:
           text: Developed a diagnostic service that significantly shortened development and deployment cycles by ensuring parity across multiple product sites' server configurations.
         - bullet:
@@ -72,11 +56,11 @@ experience:
         - bullet:
           text: Integrated the query engine with a responsive web interface using AngularJS interacting with a Java servlet.
         - bullet:
-          text: Oversaw company-wide deployment and adoption across different teams, domestic and international (e.g. Engineering, Network Operations, QA).
+          text: Oversaw org-wide deployment and adoption across different teams, domestic and international (e.g. Engineering, Network Operations, QA).
         - bullet:
           text: Presented well-received demos to many senior executives, including the CEO. Incorporated feedback and added requested functionality for specific use cases.
   - exp:
-    company: Zscaler
+    org: Zscaler
     location: San Jose, CA
     roles:
       - role:
@@ -93,7 +77,8 @@ experience:
 projects:
   - project:
     title: last.fm spelunker
-    link: https://github.com/sumeet-bansal/last.fm-spelunker
+    link:
+    github: sumeet-bansal/last.fm-spelunker
     details:
       - bullet:
         text: Generates an exhaustive SQL database of a user's listening history and related info through the last.fm API.
@@ -103,7 +88,8 @@ projects:
         text: Graphs listening statistics, long-term trends (through streamgraphs), and connections between related artists (through hierarchical edge bundles) using the D3.js data visualization library.
   - project:
     title: Triton Scheduler
-    link: https://github.com/sumeet-bansal/triton-scheduler
+    link:
+    github: sumeet-bansal/triton-scheduler
     details:
       - bullet:
         text: A Chrome extension to easily populate Google Calendars with a user's academic schedule for the quarter.
@@ -143,5 +129,9 @@ extracurriculars:
             text: Set up a web server and local website to enable real-time monitoring of the Colossus system.
 
 skills:
-  languages: Java, Python, C, C++, JavaScript, SQL, R, ARM Assembly, Shell
-  technologies: MongoDB, Node.js, Express.js, D3.js, Django, Flask, Git
+  - skillset:
+    name: Languages
+    incl: Java, Python, C, C++, JavaScript, SQL, R, ARM Assembly, Shell
+  - skillset:
+    name: Technologies/Frameworks
+    incl: MongoDB, Node.js, Express.js, D3.js, Django, Flask, Git

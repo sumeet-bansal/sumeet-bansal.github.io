@@ -11,56 +11,65 @@ layout: compress
 </head>
 
 <body>
-	<div class="wrapper">
-		<div class="sidebar-wrapper">
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
 
-			<div class="profile-container">
+			<div id="profile-container">
 
-				<img class="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
+				<img id="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
 
 				{% if site.name %}
-				<h1 class="name">{{ site.name }}</h1>
+				<h1 id="name">{{ site.name }}</h1>
 				{% endif %}
 
 				{% if site.tagline %}
-				<h3 class="tagline">{{ site.tagline }}</h3>
+				<h3 id="tagline">{{ site.tagline }}</h3>
 				{% endif %}
+
+				<div id="download">
+					<a href="{{ site.url }}/assets/Resume.pdf">
+						<button class="btn btn-lg btn-outline">
+							<i class="fa fa-download"></i>
+							<p>Download as PDF</p>
+						</button>
+					</a>
+				</div>
 
 			</div>
 
 			<div class="contact-container container-block">
-				<ul class="list-unstyled contact-list">
+				<ul class="list-unstyled" id="contact-list">
 
 					{% if site.email %}
-					<li class="email">
+					<li id="email">
 						<i class="fa fa-envelope"></i>
 						<a href="mailto: {{ site.email }}">{{ site.email }}</a>
 					</li>
 					{% endif %}
 
 					{% if site.phone %}
-					<li class="phone">
+					<li id="phone">
 						<i class="fa fa-phone"></i>
 						<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
 					</li>
 					{% endif %}
 
 					{% if site.url %}
-					<li class="website">
+					<li id="website">
 						<i class="fa fa-globe"></i>
 						<a href="{{ site.url }}" target="_blank">{{ site.url }}</a>
 					</li>
 					{% endif %}
 
 					{% if site.linkedin %}
-					<li class="linkedin">
+					<li id="linkedin">
 						<i class="fa fa-linkedin"></i>
 						<a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank">{{ site.linkedin }}</a>
 					</li>
 					{% endif %}
 
 					{% if site.github %}
-					<li class="github">
+					<li id="github">
 						<i class="fa fa-github"></i>
 						<a href="http://github.com/{{ site.github }}" target="_blank">{{site.github}}</a>
 					</li>
@@ -69,23 +78,12 @@ layout: compress
 				</ul>
 			</div>
 
-			{% if site.data.languages %}
-			<!-- div class="languages-container container-block">
-				<h2 class="container-block-title">Languages</h2>
-				<ul class="list-unstyled interests-list">
-					{%for language in site.data.languages %}
-					<li>{{ language.idiom }} <span class="lang-desc">({{ language.level }})</span></li>
-					{% endfor %}
-				</ul>
-			</div -->
-			{% endif %}
-
 		</div>
 
-		<div class="main-wrapper">
+		<div id="main-wrapper">
 
 		{% if site.data.resume.education %}
-			<section class="section education-section">
+			<section class="section" id="education">
 				<h2 class="section-title">
 					<i class="fa fa-graduation-cap"></i>
 					Education
@@ -95,9 +93,9 @@ layout: compress
 				<div class="item">
 
 					<div class="meta">
-						<div class="upper-row">
-							<h3 class="degree">{{ edu.degree }}</h3>
-							<div class="time">{{ edu.time }}</div>
+						<div class="item-header">
+							<h3 class="item-header-left degree">{{ edu.degree }}</h3>
+							<div class="item-header-right time">{{ edu.time }}</div>
 						</div>
 						<div class="university">{{ edu.university }}</div>
 					</div>
@@ -127,7 +125,7 @@ layout: compress
 			{% endif %}
 
 			{% if site.data.resume.experience %}
-			<section class="section experience-section">
+			<section class="section" id="experience">
 				<h2 class="section-title">
 					<i class="fa fa-briefcase"></i>
 					Experience
@@ -137,17 +135,17 @@ layout: compress
 				<div class="item">
 
 					<div class="meta">
-						<div class="upper-row">
-							<h3 class="company">{{ exp.company }}</h3>
-							<div class="location">{{ exp.location }}</div>
+						<div class="item-header">
+							<h3 class="item-header-left org">{{ exp.org }}</h3>
+							<div class="item-header-right location">{{ exp.location }}</div>
 						</div>
 					</div>
 
 					{% for role in exp.roles %}
 					<div class="meta">
-						<div class="lower-row">
-							<div class="job-title">{{ role.title }}</div>
-							<div class="time">{{ role.time }}</div>
+						<div class="item-header-secondary">
+							<div class="item-header-secondary-left job-title">{{ role.title }}</div>
+							<div class="item-header-secondary-right time">{{ role.time }}</div>
 						</div>
 					</div>
 
@@ -170,7 +168,7 @@ layout: compress
 			{% endif %}
 
 			{% if site.data.resume.projects %}
-			<section class="section projects-section">
+			<section class="section" id="resume-projects">
 					<h2 class="section-title">
 						<i class="fa fa-code"></i>
 						Projects
@@ -178,9 +176,16 @@ layout: compress
 
 					{% for project in site.data.resume.projects %}
 					<div class="item">
-						<span class="project-title">
-							<a href="{{ project.link }}">{{ project.title }}</a>
-						</span>
+						<div class="item-header">
+							<div class="item-header-left project-title">{{ project.title }}</div>
+							{% if project.github %}
+							<div class="item-header-right project-github">
+								<a href="http://github.com/{{ project.github }}" target="_blank">
+									<i class="fa fa-github"></i>
+								</a>
+							</div>
+							{% endif %}
+						</div>
 
 						{% if project.details %}
 						<div class="details">
@@ -189,14 +194,6 @@ layout: compress
 								<li>{{ bullet.text }}</li>
 								{% endfor %}
 							</ul>
-						</div>
-						{% endif %}
-
-						{% if project.stack %}
-						<div class="tech-stack">
-						{% for technology in project.stack %}
-						<p>{{ technology.name }}</p>
-						{% endfor %}
 						</div>
 						{% endif %}
 
@@ -217,16 +214,16 @@ layout: compress
 				<div class="item">
 
 					<div class="meta">
-						<div class="upper-row">
-							<h3 class="company">{{ exc.org }}</h3>
+						<div class="item-header">
+							<h3 class="item-header-left org">{{ exc.org }}</h3>
 						</div>
 					</div>
 
 					{% for role in exc.roles %}
 					<div class="meta">
-						<div class="lower-row">
-							<div class="job-title">{{ role.title }}</div>
-							<div class="time">{{ role.time }}</div>
+						<div class="item-header-secondary">
+							<div class="item-header-secondary-left job-title">{{ role.title }}</div>
+							<div class="item-header-secondary-right time">{{ role.time }}</div>
 						</div>
 					</div>
 
@@ -249,7 +246,7 @@ layout: compress
 			{% endif %}
 
 			{% if site.data.resume.publications %}
-			<section class="section publications-section">
+			<section class="section" id="publications">
 				<h2 class="section-title">
 					<i class="fa fa-file-text"></i>
 					Publications
@@ -267,25 +264,18 @@ layout: compress
 			{% endif %}
 
 			{% if site.data.resume.skills %}
-			<section class="skills-section section">
+			<section class="section" id="skills">
 				<h2 class="section-title">
 					<i class="fa fa-rocket"></i>
 					Skills &amp; Qualifications
 				</h2>
 
-				<div class="skillset">
-
-					<h3 id="languages">Languages</h3>
-					<div class="details">
-					{{ site.data.resume.skills.languages }}
-					</div>
-
-					<h3 id="technologies">Technologies/Frameworks</h3>
-					<div class="details">
-					{{ site.data.resume.skills.technologies }}
-					</div>
-
+				{% for skillset in site.data.resume.skills %}
+				<div class="item">
+					<h3 class="item-header-left skillset-name">{{ skillset.name }}</h3>
+					<div class="skillset-incl">{{ skillset.incl }}</div>
 				</div>
+				{% endfor %}
 
 			</section>
 			{% endif %}
