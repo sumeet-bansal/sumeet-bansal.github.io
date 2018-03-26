@@ -60,7 +60,7 @@ linkedin:          s-bansal
 phone: 1 (408) 250-3097
 
 # Gems
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
