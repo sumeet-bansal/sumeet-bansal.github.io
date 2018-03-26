@@ -1,12 +1,6 @@
-/*   
- * Template Name: Orbit - Responsive Resume/CV Template for Developers
- * Version: 1.0
- * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
-*/
-/* ======= Base ======= */
+/*
+ * based on the Orbit resume template by Xiaoying Riley
+ */
 
 $lslate: #545e6c;
 $dslate: #3F4650;
@@ -21,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 h1,
 h2,
 h3,
@@ -29,30 +24,33 @@ h5,
 h6 {
   font-weight: 700;
 }
+
 a {
   color: $main;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-}
-a:hover {
-  text-decoration: underline;
-  color: $main;
-}
-a:focus {
+  &:hover {
+    text-decoration: underline;
+    color: $main;
+  }
+  &:focus {
   text-decoration: none;
+  }
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    color: $main;
+  }
 }
-a:hover,
-a:active,
-a:focus,
-a:visited {
-  color: $main;
-}
+
 p {
   line-height: 1.5;
 }
-.wrapper {
+
+#wrapper {
   background: $main;
   max-width: 1000px;
   margin: 0 auto;
@@ -61,244 +59,205 @@ p {
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.sidebar-wrapper {
+
+#sidebar-wrapper {
   background: $main;
   position: absolute;
-  right: 0;
+  right: 0px;
   width: 280px;
   height: 100%;
   min-height: 800px;
   color: $white;
+  a {
+    color: $white;
+  }
+  .container-block {
+    padding: 30px;
+  }
+  #profile-container {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: $white;
+    #name {
+      font-size: 32px;
+      font-weight: 900;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    #tagline {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    #profile-img {
+      max-width: 100px;
+      margin-bottom: 15px;
+      border: 0px solid $white;
+      border-radius: 10%;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+  #download {
+    margin-top: 10px;
+    border: 0px;
+    button {
+      width: 90%;
+      padding: 5px 15px;
+    }
+    p {
+      display: inline;
+      padding-left: 10px;
+    }
+    .btn:hover {
+      background: #d6d6d6;
+    }
+  }
+  #contact-list {
+    .fa {
+      margin-right: 5px;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    #email .fa {
+      font-size: 14px;
+    }
+  }
 }
-.sidebar-wrapper a {
-  color: $white;
-}
-.sidebar-wrapper .profile-container {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  color: $white;
-}
-.sidebar-wrapper .name {
-  font-size: 32px;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.sidebar-wrapper .tagline {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.sidebar-wrapper .profile {
-  margin-bottom: 15px;
-}
-.sidebar-wrapper .profile-img {
-  max-width: 100px;
-  margin-bottom: 15px;
-  border: 0px solid $white;
-  border-radius: 10%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-.sidebar-wrapper .contact-list .fa {
-  margin-right: 5px;
-  font-size: 18px;
-  vertical-align: middle;
-}
-.sidebar-wrapper .contact-list li {
-  margin-bottom: 15px;
-}
-.sidebar-wrapper .contact-list li:last-child {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .contact-list .email .fa {
-  font-size: 14px;
-}
-.sidebar-wrapper .container-block {
-  padding: 30px;
-}
-.sidebar-wrapper .container-block-title {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-.sidebar-wrapper .languages-container .lang-desc {
-  color: rgba(255, 255, 255, 0.6);
-}
-.sidebar-wrapper .languages-list {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .languages-list li {
-  margin-bottom: 10px;
-}
-.sidebar-wrapper .languages-list li:last-child {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .interests-list {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .interests-list li {
-  margin-bottom: 10px;
-}
-.sidebar-wrapper .interests-list li:last-child {
-  margin-bottom: 0;
-}
-.main-wrapper {
+
+#main-wrapper {
   background: $white;
   padding: 60px;
   padding-right: 340px;
-}
-.main-wrapper ul,
-.main-wrapper ol {
-  margin-bottom: 0px;
-}
-.main-wrapper .section-title {
-  font-size: 24px;
-  font-weight: 500;
-  color: $darkmain;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 10px;
-  bottom: 0px;
-  left: 0px;
-}
-.main-wrapper .section-title .fa {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
-  display: inline-block;
-  color: $white;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: $main;
-  text-align: center;
-  padding-top: 8px;
-  font-size: 16px;
-  position: relative;
-  top: -2px;
-}
-
-.main-wrapper .education-section .coursework table {
-  width: 100%;
-}
-.main-wrapper .education-section .coursework table, tr, td {
-  border: none;
-}
-.main-wrapper .education-section .coursework th, td {
-  padding: 15px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-.main-wrapper .education-section .coursework td:first-child {
-  text-align: center;
-}
-.main-wrapper .education-section .coursework td:last-child {
-  text-align: left;
-}
-.main-wrapper .education-section .coursework tr:hover {
-  background-color: #f5f5f5;
-}
-
-.main-wrapper .section {
-  margin-bottom: 40px;
-}
-.main-wrapper .experience-section .item,
-.main-wrapper .education-section .item {
-  margin-bottom: 20px;
-}
-.main-wrapper .upper-row {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 2px;
-}
-.main-wrapper .lower-row {
-  position: relative;
-  overflow: hidden;
-  margin-top: 5px;
-}
-
-.main-wrapper .degree,
-.main-wrapper .company,
-.main-wrapper .project-title,
-.main-wrapper .skillset h3 {
-  color: $dslate;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-
-.main-wrapper .location,
-.main-wrapper .time {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.main-wrapper ul {
-  margin-left: 20px;
-}
-
-.main-wrapper .project-title {
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.main-wrapper .projects-section .intro {
-  margin-bottom: 30px;
-}
-.main-wrapper .projects-section .item {
-  margin-bottom: 15px;
-}
-.main-wrapper .publication-title {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 1px;
-}
-.main-wrapper .publication-authors {
-  font-style: italic;
-  margin-bottom: 1px;
-}
-.main-wrapper .publications-section .intro {
-  margin-bottom: 30px;
-}
-.main-wrapper .publications-section .item {
-  margin-bottom: 15px;
-}
-.skillset .item {
-  margin-bottom: 15px;
-  overflow: hidden;
-}
-.skillset #technologies {
-  padding-top: 10px;
-}
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-  body {
-    padding: 0;
+  ul,
+  ol {
+    margin-bottom: 0px;
   }
-  .sidebar-wrapper {
+  .section-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $darkmain;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    bottom: 0px;
+    left: 0px;
+    .fa {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+      display: inline-block;
+      color: $white;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      background: $main;
+      text-align: center;
+      padding-top: 8px;
+      font-size: 16px;
+      position: relative;
+      top: -2px;
+    }
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  .item-header {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+  }
+  .item-header-secondary {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  .item-header-left {
+    position: relative;
+    color: $dslate;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .item-header-right,
+  .item-header-secondary-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .item {
+    margin-bottom: 20px;
+  }
+  ul {
+    margin-left: 20px;
+  }
+  #education .coursework {
+    margin-top: 5px;
+    table {
+      width: 100%;
+    }
+    table, tr, td {
+      border: none;
+    }
+    th, td {
+      padding: 15px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    td:first-child {
+      text-align: center;
+    }
+    td:last-child {
+      text-align: left;
+    }
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  }
+  #publications {
+    .publication-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 1px;
+    }
+    .publication-authors {
+      font-style: italic;
+      margin-bottom: 1px;
+    }
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 850px) {
+  body {
+    padding: 10px 15px;
+  }
+  #sidebar-wrapper {
     position: static;
     width: inherit;
   }
-  .main-wrapper {
+  #main-wrapper {
     padding: 30px;
-  }
-  .main-wrapper .time {
-    position: static;
-    display: block;
-  }
-  .main-wrapper .upper-row {
-    margin-bottom: 0;
+    .time {
+      position: static;
+      display: block;
+    }
+    .item-header {
+      margin-bottom: 0px;
+    }
   }
 }
