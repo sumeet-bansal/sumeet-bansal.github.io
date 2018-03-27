@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Initial Commit"
+title:  "initial commit"
 date:   2018-03-21
 excerpt: "(obligatory first post)"
 tag:
@@ -17,9 +17,10 @@ table, tr, td {
 	border: none;
 }
 th, td {
-	padding: 15px;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding: 7px 15px;
+}
+td.message {
+	width: 100%;
 }
 td:first-child {
 	text-align: center;
@@ -33,7 +34,7 @@ tr:hover {
 </style>
 
 ## context
-I'd been meaning to make my own personal website for a while now but hadn't gotten around to it for a couple reasons: for one, I didn't know how exactly I wanted to use it&mdash;what purpose would it serve besides that of any other ordinary personal website/blog (and I wasn't even sure if I wanted to use it as a blog)? And of course, those choices would inform my design decisions when I would finally get around to making my website. It eventually came down to if I wanted a static site that I made from scratch in pure HTML/CSS/JS or that was based on a Jekyll template and built with GitHub pages. And at some point, I decided to go with the Jekyll template because web "design" (as opposed to development) isn't my strongest area; it's easy enough to cobble together a basic Bootstrap website that isn't some aesthetic abomination, but a lot of people who are (frankly) better at making things look **good** have put a lot of time into, well, making things look good, so it just made sense to use an existing template and modify it to my unique (ish) needs/preferences. I think I stumbled across the Halve theme while browsing one of GitHub's collection of Jekyll themes, and decided to use that as my foundation. Since then, I've made some moderately heavy modifications to the internal structure of the project, so I'm just gonna go through some of those changes, commit-by-commit, and try to explain my thought process for anyone interested (but mostly for the sake of proper documentation and posterity).
+I'd been meaning to make my own personal website for a while now but hadn't gotten around to it for a couple reasons: for one, I didn't know how exactly I wanted to use it&mdash;what purpose would it serve besides that of any other ordinary personal website/blog (and I wasn't even sure if I wanted to use it as a blog)? And of course, those choices would inform my design decisions when I would finally get around to making my website. It eventually came down to if I wanted a static site that I made from scratch in pure HTML/CSS/JS or that was based on a Jekyll template and built with GitHub pages. And at some point, I decided to go with the Jekyll template because web "design" (as opposed to development) isn't my strongest area; it's easy enough to cobble together a basic Bootstrap website that isn't some aesthetic abomination, but a lot of people who are (frankly) better at making things look **good** have put a lot of time into, well, making things look good, so it just made sense to use an existing template and modify it to my unique (ish) needs/preferences. I think I stumbled across the Halve theme while browsing one of GitHub's collection of Jekyll themes, and decided to use that as my foundation. Since then, I've made some moderately heavy modifications to the internal structure of the project, so I'm just gonna go through some of those changes, commit-by-commit, and try to explain my thought process for anyone interested (but mostly for the sake of proper documentation and posterity). Note: most of these sections are actually not in chronological order&mdash;I just arranged them to fit more cleanly into some sort of narrative.
 
 ## initial commit pt. 1
 #### relevant commits
@@ -104,8 +105,37 @@ And on mobile:
 			
 You can find Halve [on GitHub](https://github.com/TaylanTatli/Halve) with [some solid documentation on how to get up and running](https://taylantatli.github.io/Halve/halve-theme/).
 
+## setting up my local environment
+#### relevant commits
+
+<table>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/8051816ed947fc2fa0e6ea7cc47764171c83deba">
+				8051816
+			</a>
+		</td>
+		<td class="message">
+			added files for local hosting
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/18850849ab91336c189d6c66d35656a7d3387474">
+				1885084
+			</a>
+		</td>
+		<td class="message">
+			renamed local environment setup script
+		</td>
+	</tr>
+</table>
+
+I basically just followed [this guide to setting up a GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) and wrote `env-setup.sh` for future reference since I ran into some dependency issues.
+
 ## overhauling the projects page
 #### relevant commits
+
 <table>
 	<tr>
 		<td class="sha">
@@ -131,8 +161,77 @@ You can find Halve [on GitHub](https://github.com/TaylanTatli/Halve) with [some 
 
 The way Halve is originally set up has the projects page as an overlay on the other pages, which I personally really disliked, so I went ahead and made the projects overlay into a fully-fledged page. This involved updating the projects icon `href` on the rest of the layouts, making a separate `projects.html` (which was basically identical to the original `overlay.html`) layout and `projects.md` page, and then updating a bunch of CSS. It worked pretty well the first time around&mdash;the second commit's just fixing a CSS inheritance I forgot in the first commit and found while testing the new projects page on different browsers (probably something to do with Firefox's default CSS versus Chrome's and Edge's).
 
+## ...and then scrapping it altogether
+#### relevant commits
+
+<table>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/f82432fdd74203a15911696b9ac9321679f1e35d">
+				f82432f
+			</a>
+		</td>
+		<td class="message">
+			added rough draft of web-based resume
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/436a4684fc23eeb42276afb2d7a402874d0fccf7">
+				436a468
+			</a>
+		</td>
+		<td class="message">
+			cleaned up resume assets and restructured data
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/59c8c02a76c05abbf35b07a0c1e6e18eb75b15b8">
+				59c8c02
+			</a>
+		</td>
+		<td class="message">
+			styling for resume layout
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/62e349c6e081de999dd089f80afd2a9933fa9a4b">
+				62e349c
+			</a>
+		</td>
+		<td class="message">
+			merged /resume into project structure
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/3774bdc8fa179f48be3dbd0a2db037a1c42576f7">
+				3774bdc
+			</a>
+		</td>
+		<td class="message">
+			cleaned up web resume and added GitHub links and download button
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/45b45da23689269c7db0d1f831c98254792891e4">
+				45b45da
+			</a>
+		</td>
+		<td class="message">
+			overhauled project structure
+		</td>
+	</tr>
+</table>
+
+I wasn't really a fan of the projects page to begin with so I decided to replace it altogether. At this point I still had yet to add my resume to the site as well, so I decided to just replace the projects page with a resume. I didn't want to just link to a PDF so I started looking into web-based resumes. So, I did some research and settled on the Jekyll theme [online-cv](https://github.com/sharu725/online-cv/). I wasn't a huge fan of how the project was structured, so I rewrote a fair bit of the theme, while still keeping parts of the structure and styling intact. After that I just merged the web resume into my main site, added my own embellishments (e.g. GitHub icon/links for projects, a "Download as PDF" button in the sidebar, a section for relevant coursework at UCSD), and replaced `/projects` with `/resume` in a giant commit where I ended up restructuring the entire site (more on that later).
+
 ## a standard "navbar"
 #### relevant commits
+
 <table>
 	<tr>
 		<td class="sha">
@@ -174,9 +273,19 @@ The way Halve is originally set up has the projects page as an overlay on the ot
 			updated icon CSS on /projects
 		</td>
 	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/45b45da23689269c7db0d1f831c98254792891e4">
+				45b45da
+			</a>
+		</td>
+		<td class="message">
+			overhauled project structure
+		</td>
+	</tr>
 </table>
 
-Pretty self-explanatory. The pages had different "navbars": the home page indicated what the icons stood for (i.e. had the "POSTS" and "PROJECTS" text under the icons) but the posts-list and post layouts didn't so I went ahead and changed that in the layouts' HTML. And since the projects page was originally an overlay, all it had was the projects icon, which closed the overlay, but that seemed a little restrictive and not very user-centered, so I added this standard navbar to the projects page as well, albeit color-inverted since that looked much cleaner.
+Pretty self-explanatory. The pages had different "navbars": the home page indicated what the icons stood for (i.e. had the "POSTS" and "PROJECTS" text under the icons) but the posts-list and post layouts didn't so I went ahead and changed that in the layouts' HTML. And since the projects page was originally an overlay, all it had was the projects icon, which closed the overlay, but that seemed a little restrictive and not very user-centered, so I added this standard navbar to the projects page as well, albeit color-inverted since that looked much cleaner. And then, when I restructured the entire project (in a giant commit that feels like a non sequitur now), I moved that standardized navbar to a template (`/_includes/navbar.html`).
 
 ## hiding scrollbars
 #### relevant commits
@@ -222,6 +331,26 @@ Pretty self-explanatory. The pages had different "navbars": the home page indica
 			hid horizontal scrollbars
 		</td>
 	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/ba61c3cfb549010b70628a2d562666abfb937ad7">
+				ba61c3c
+			</a>
+		</td>
+		<td class="message">
+			cleaned up inline styling and scripting
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/45b45da23689269c7db0d1f831c98254792891e4">
+				45b45da
+			</a>
+		</td>
+		<td class="message">
+			overhauled project structure
+		</td>
+	</tr>
 </table>
 
 One thing I noticed with the original theme was that when going from the home page to the posts page or an individual post, the icons on the top right would shift slightly left. I realized that was because of the scrollbar throwing off the icons' offsets, so I decided to hide the scrollbars (while still maintaining the ability to scroll, of course). This was pretty easy via `::-webkit-scrollbar`, but the problem is that that only works on browsers that support `webkit` (e.g. Chrome and Safari) and browsers that didn't (e.g. Firefox and Edge) still had the scrollbars and the shifting icon issue. I found [this Stack Overflow post](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll) pretty helpful; basically, it was just adding this snippet of JavaScript to each affected HTML file:
@@ -229,7 +358,25 @@ One thing I noticed with the original theme was that when going from the home pa
 var block = document.getElementById('affected-block');
 block.style.marginRight = (block.clientWidth - block.offsetWidth) + "px";
 ```
-What that does is add a `margin-right` style rule to the affected block, where `margin-right` equals the number of pixels the scrollbar takes up, essentially moving the entire block some `n` pixels right and hiding the scrollbar off-screen. Of course, this creates a horizontal scrollbar since the vertical scrollbar is now off-screen, but the horizontal scrollbar can be easily hidden with no issues via the `overflow-x: hidden` rule.
+What that does is add a `margin-right` style rule to the affected block, where `margin-right` equals the number of pixels the scrollbar takes up, essentially moving the entire block some `n` pixels right and hiding the scrollbar off-screen. Of course, this creates a horizontal scrollbar since the vertical scrollbar is now off-screen, but the horizontal scrollbar can be easily hidden with no issues via the `overflow-x: hidden` rule. This code snippet would get its own script (`assets/js/scrollbars.js`) in that last commit.
+
+## farm my data Google
+#### relevant commits
+
+<table>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/6f12da37e968ef1726338359a6f0660f3fd2f1f9">
+				6f12da3
+			</a>
+		</td>
+		<td class="message">
+			adding tracking code for Google Analytics
+		</td>
+	</tr>
+</table>
+
+So I can see just how few people visit.
 
 ## pt. 2
 #### relevant commits
@@ -315,9 +462,58 @@ What that does is add a `margin-right` style rule to the affected block, where `
 			cleaned up inline styling and scripting
 		</td>
 	</tr>
+	<tr>
+		<td class="sha">...</td>
+		<td class="message">
+			basically the entirety of this post
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/45b45da23689269c7db0d1f831c98254792891e4">
+				45b45da
+			</a>
+		</td>
+		<td class="message">
+			overhauled project structure
+		</td>
+	</tr>
 </table>
 
 More housekeeping and just making the site mine. The commit messages seem pretty self-explanatory.
+
+## no soap, radio.
+#### relevant commits
+
+<table>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/45b45da23689269c7db0d1f831c98254792891e4">
+				45b45da
+			</a>
+		</td>
+		<td class="message">
+			overhauled project structure
+		</td>
+	</tr>
+</table>
+
+I just found it really amusing and almost anticlimactic how I was updating this post while actually implementing all these changes, then ended up rewriting a significant portion of basically everything in the end. Each section basically became "I did this, then I did that, then I rewrote everything." It's very anticlimactic.
+
+For reference, here's what that commit includes (from the commit message):
++ cleaned up original Halve CSS
++ split original CSS into layout-specific stylesheets
++ replaced `/projects` with `/resume`
++ deleted `/projects` and associated files
++ removed unnecessary `page` layout
++ created separate template for navbar
++ replaced spaces with tabs where possible
++ fixed conditional in resume sidebar
++ moved scrollbars script from `/_includes/` to `/assets/js/`
++ updated name on LICENSE
+
+## to do
+The only items that are actually pressing issues before I'm "done" with this first iteration of the site are the home page and favicon. On the home page, I need to come up with something less corny than the placeholder "Hi MTV!" and write an actual introduction. For the favicon, I was thinking of just using my bitmoji (which I have yet to make).
 
 ## conclusion
 For anyone who bothered reading this far, I'm still not entirely sure what this website is for, but I'm sure I'll figure it out at some point. At the very least, I can put "portfolio" type stuff like my personal projects, and I applied for a slot at KSDT (UCSD's college radio), so it might be cool to post my weekly playlists as blog posts&mdash;assuming I do get a slot. We'll see, I guess?
