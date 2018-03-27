@@ -1,0 +1,19 @@
+#block-left {
+	display: none;
+}
+#block-right {
+	width: 100%;
+}
+#about-info {
+	h1 {
+		font-size: 75px;
+		&::after {
+			background: #d9534f;
+			width: 75%;
+			height: 3px;
+		}
+	}
+	h3 {
+		font-size: 40px;
+	}
+}

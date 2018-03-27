@@ -5,10 +5,6 @@ url: https://sumeet-bansal.github.io
 logo: profile.png
 locale: en_US
 
-# resume
-name: Sumeet Bansal
-tagline: Student Developer
-
 # left block images
 background:
   homepage: images/home.png
@@ -34,32 +30,30 @@ google-analytics: UA-116299114-1
 
 # social links
 email:             sumeetbansal@gmail.com
-#google.plus:        username
-twitter:            sumeetbansal21
-#facebook:           username
-github:             sumeet-bansal
+#google.plus:       username
+twitter:           sumeetbansal21
+#facebook:          username
+github:            sumeet-bansal
 #stackoverflow:     8544720/sbansal
 linkedin:          s-bansal
-#xing:              username
-#instagram:          whyissumeetbansaltaken
+#instagram:         whyissumeetbansaltaken
 #lastfm:            sbansal21
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-#steam:              mrgoodbytes21
+#steam:             mrgoodbytes21
 #dribbble:          username
 #youtube:           username
 #soundcloud:        sumeet-bansal-1
-#weibo:             username
 #flickr:            username
 #codepen:           username
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
 #behance:           username
-phone: 1 (408) 250-3097
+phone:             1 (408) 250-3097
 
-# Gems
+# Jekyll plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
