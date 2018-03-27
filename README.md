@@ -9,7 +9,6 @@ Made using a modified version of [this Jekyll port](https://github.com/TaylanTat
 + make a nicer 404 page
 + bitmoji favicon
 + write `index.md`
-+ replace `/projects` with a web-based resume (with link to PDF)
-	+ style `/resume` with [`konpa/devicon`](https://konpa.github.io/devicon/)
++ style `/resume` with [`konpa/devicon`](https://konpa.github.io/devicon/)
 + change `mailto` on home page to copying to clipboard
 + add a `robots.txt` file

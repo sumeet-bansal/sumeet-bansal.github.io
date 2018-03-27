@@ -4,8 +4,9 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+
 <head>
+	{% include head.html %}
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/resume.css">
 </head>
@@ -18,12 +19,12 @@ layout: compress
 
 				<img id="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
 
-				{% if site.name %}
-				<h1 id="name">{{ site.name }}</h1>
+				{% if site.data.resume.name %}
+				<h1 id="name">{{ site.data.resume.name }}</h1>
 				{% endif %}
 
-				{% if site.tagline %}
-				<h3 id="tagline">{{ site.tagline }}</h3>
+				{% if site.data.resume.tagline %}
+				<h3 id="tagline">{{ site.data.resume.tagline }}</h3>
 				{% endif %}
 
 				<div id="download">
@@ -284,8 +285,8 @@ layout: compress
 	</div>
 
 	<script type="text/javascript" src="{{ site.url }}/assets/js/src/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="{{ site.url }}/assets/js/bootstrap.min.js"></script>    
-	<script type="text/javascript" src="{{ site.url }}/assets/js/resume.js"></script> 
+	<script type="text/javascript" src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/resume.js"></script>
 
 	{% include scripts.html %}
 
