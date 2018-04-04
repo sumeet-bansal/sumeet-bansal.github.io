@@ -5,11 +5,12 @@
 $lslate: #545e6c;
 $dslate: #3F4650;
 $origblue: #2d7788;
+$background: #f5f5f5;
 
 body {
 	font-family: "weblysleek_uilight", sans-serif;
 	color: $lslate;
-	background: #f5f5f5;
+	background: $background;
 	font-size: 16px;
 	padding: 30px;
 	-webkit-font-smoothing: antialiased;
@@ -48,6 +49,14 @@ a {
 
 p {
 	line-height: 1.5;
+}
+
+.posts-menu-icon {
+	background: $background;
+	&:before,
+	&:after {
+		background: $background;
+	}
 }
 
 #wrapper {

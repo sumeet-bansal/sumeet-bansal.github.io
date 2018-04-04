@@ -17,7 +17,9 @@ layout: compress
 
 			<div id="profile-container">
 
-				<img id="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
+				<a href="{{ site.url }}" class="logo">
+					<img img id="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
+				</a>
 
 				{% if site.data.resume.name %}
 				<h1 id="name">{{ site.data.resume.name }}</h1>
