@@ -3,6 +3,12 @@ layout: home
 ---
 # About Me
 
-### Mathematics and Computer Science at UC San Diego.
+Hi, I'm Sumeet. And this is my website and occasional blog.
 
-### This website is under construction.
+I'm a native of the Bay Area and study Mathematics and Computer Science at [UC San Diego](https://ucsd.edu/).
+
+I'm the webmaster for [SEDS UCSD](https://sedsucsd.org), an engineering organization working on a number of space-related projects, and a project manager and software developer for [Triton Software Engineering](http://tc.ucsd.edu), a campus organization that provides pro-bono technical and web development services for non-profits.
+
+I've previously interned at [Zscaler](https://www.zscaler.com/), a global cloud-based info-sec company, and [Actiance](https://www.actiance.com/), a communications compliance, archiving, and analytics multinational corporation. I'll be spending my summer out in the Midwest, working with the [IBM Watson Health](https://www.ibm.com/watson/health/) team.
+
+And, I'm a pretty big hip-hop head. If you're at all interested, you can check out what I've been listening to recently on [my last.fm profile](https://www.last.fm/user/sbansal21).
