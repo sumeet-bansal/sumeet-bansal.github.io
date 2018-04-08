@@ -6,7 +6,10 @@ Made using a modified version of [this Jekyll port](https://github.com/TaylanTat
 
 ### TODO
 #### for v1.0
-+ bitmoji favicon
++ final check
+	+ update setup post
+	+ [validate site code](https://validator.w3.org/)
+	+ [run through the front-end checklist](https://github.com/thedaviddias/Front-End-Checklist)
 
 #### future releases
 + publish GitHub pages and add images for projects
@@ -14,3 +17,4 @@ Made using a modified version of [this Jekyll port](https://github.com/TaylanTat
 + style `/resume` with [`konpa/devicon`](https://konpa.github.io/devicon/)
 + change `mailto` on home page to copying to clipboard
 + add a `robots.txt` file
++ add other extracurriculars (e.g. TC/TSE) and projects
