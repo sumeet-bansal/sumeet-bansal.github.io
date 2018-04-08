@@ -512,8 +512,53 @@ For reference, here's what that commit includes (from the commit message):
 + moved scrollbars script from `/_includes/` to `/assets/js/`
 + updated name on LICENSE
 
-## to do
-The only items that are actually pressing issues before I'm "done" with this first iteration of the site are the home page and favicon. On the home page, I need to come up with something less corny than the placeholder "Hi MTV!" and write an actual introduction. For the favicon, I was thinking of just using my bitmoji (which I have yet to make).
+## home stretch
+#### relevant commits
+
+<table>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/29b52b848086bc198c730cc3ab9c021d797c997e">
+				29b52b8
+			</a>
+		</td>
+		<td class="message">
+			added basic website description
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/95bced90aa7a79891d2597a664c074f51db240f0">
+				95bced9
+			</a>
+		</td>
+		<td class="message">
+			finished home page blurb and edited CSS
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/24f40a5ee46b9fce7fcec5c90c9ffbf030e810bb">
+				24f40a5
+			</a>
+		</td>
+		<td class="message">
+			added bitmoji favicons
+		</td>
+	</tr>
+	<tr>
+		<td class="sha">
+			<a href="https://github.com/sumeet-bansal/sumeet-bansal.github.io/commit/9bc021bea4b94508433cdda5822bfddd85bcc25e">
+				9bc021b
+			</a>
+		</td>
+		<td class="message">
+			validated most of site code
+		</td>
+	</tr>
+</table>
+
+Came up with a better placeholder than "Hi MTV!", wrote an actual introduction/blurb, added a favicon (my bitmoji), [validated](http://validator.w3.org) most of the site code, and ran through most of [the front-end checklist](https://github.com/thedaviddias/Front-End-Checklist).
 
 ## conclusion
 For anyone who bothered reading this far, I'm still not entirely sure what this website is for, but I'm sure I'll figure it out at some point. At the very least, I can put "portfolio" type stuff like my personal projects, and I applied for a slot at KSDT (UCSD's college radio), so it might be cool to post my weekly playlists as blog posts&mdash;assuming I do get a slot. We'll see, I guess?
