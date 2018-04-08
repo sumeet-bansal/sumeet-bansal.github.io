@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	{% include head.html %}
@@ -18,7 +18,7 @@ layout: compress
 			<div id="profile-container">
 
 				<a href="{{ site.url }}" class="logo">
-					<img img id="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
+					<img id="profile-img" src="{{ site.url }}/images/{{ site.logo }}" alt="profile picture" />
 				</a>
 
 				{% if site.data.resume.name %}
@@ -32,8 +32,7 @@ layout: compress
 				<div id="download">
 					<a href="{{ site.url }}/assets/Resume.pdf">
 						<button class="btn btn-lg btn-outline">
-							<i class="fa fa-download"></i>
-							<p>Download as PDF</p>
+							<i class="fa fa-download"></i> Download as PDF
 						</button>
 					</a>
 				</div>
@@ -46,7 +45,7 @@ layout: compress
 					{% if site.email %}
 					<li id="email">
 						<i class="fa fa-envelope"></i>
-						<a href="mailto: {{ site.email }}">{{ site.email }}</a>
+						<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 					</li>
 					{% endif %}
 
@@ -286,9 +285,9 @@ layout: compress
 		</div>
 	</div>
 
-	<script type="text/javascript" src="{{ site.url }}/assets/js/src/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="{{ site.url }}/assets/js/resume.js"></script>
+	<script src="{{ site.url }}/assets/js/src/jquery-2.2.3.min.js"></script>
+	<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
+	<script src="{{ site.url }}/assets/js/resume.js"></script>
 
 	{% include scripts.html %}
 
