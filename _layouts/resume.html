@@ -52,7 +52,7 @@ layout: compress
 					{% if site.phone %}
 					<li id="phone">
 						<i class="fa fa-phone"></i>
-						<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+						<a href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
 					</li>
 					{% endif %}
 
