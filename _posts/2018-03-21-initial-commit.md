@@ -10,26 +10,8 @@ permalink: /post/initial-commit
 ---
 
 <style>
-table {
-	width: 100%;
-}
-table, tr, td {
-	border: none;
-}
-th, td {
-	padding: 7px 15px;
-}
-td.message {
-	width: 100%;
-}
-td:first-child {
-	text-align: center;
-}
-td:last-child {
-	text-align: left;
-}
-tr:hover {
-	background-color: #f5f5f5;
+h4 {
+	margin: 1em 0em 0.5em;
 }
 </style>
 
