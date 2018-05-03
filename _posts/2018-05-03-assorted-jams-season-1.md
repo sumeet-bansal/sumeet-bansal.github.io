@@ -16,3 +16,6 @@ iframe {
 	width: 100%;
 }
 </style>
+
+## week 5 (midseason premiere)
+<iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/0RbEfZHTlUd7ZM47L6UXTh" height="622" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
