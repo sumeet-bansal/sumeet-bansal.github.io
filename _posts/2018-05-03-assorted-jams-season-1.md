@@ -19,3 +19,6 @@ iframe {
 
 ## week 5 (midseason premiere)
 <iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/0RbEfZHTlUd7ZM47L6UXTh" height="622" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+## week 6 (the james invitational)
+<iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/2eXUnN2sr70FzebGMui7aG" height="667" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
