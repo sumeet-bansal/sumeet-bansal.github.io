@@ -25,3 +25,6 @@ iframe {
 
 ## week 7 (half baked)
 <iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/2qZoyCnZqwigU2OcaDpzWb" height="577" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+## week 8 (half baked 2)
+<iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/5CCh8Q70jpQIksu59dmsHz" height="712" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
