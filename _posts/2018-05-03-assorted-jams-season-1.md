@@ -31,3 +31,6 @@ iframe {
 
 ## week 9 (walnuts and provolone)
 <iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/3MVmOI3um9tgAzcVxpqImn" height="667" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+## week 10 (the sophomore slump)
+<iframe src="https://open.spotify.com/embed/user/theflyingpineapple/playlist/5hwLAsvACycQEKmz2n4i0E" height="667" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
