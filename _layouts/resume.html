@@ -97,9 +97,11 @@ layout: compress
 					<div class="meta">
 						<div class="item-header">
 							<h3 class="item-header-left degree">{{ edu.degree }}</h3>
-							<div class="item-header-right time">{{ edu.time }}</div>
 						</div>
-						<div class="university">{{ edu.university }}</div>
+						<div class="item-header-secondary">
+							<div class="item-header-secondary-left university">{{ edu.university }}</div>
+							<div class="item-header-secondary-right time">{{ edu.time }}</div>
+						</div>
 					</div>
 
 					{% if edu.coursework %}
