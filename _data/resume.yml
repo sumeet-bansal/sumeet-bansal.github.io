@@ -3,14 +3,11 @@ tagline: Student Developer
 
 education:
   - edu:
-    degree: Mathematics-Computer Science, BS
+    degree: Computer Science, BS; Minor in Mathematics
     university: University of California, San Diego
-    time: 2016 - 2019
+    time: 2016 - 2020
     description: Provost Honors.
     coursework:
-      - course:
-        id: CSE 30
-        title: Computer Organization and Systems Programming
       - course:
         id: CSE 100
         title: Advanced Data Structures
@@ -21,11 +18,20 @@ education:
         id: CSE 105
         title: Theory of Computability
       - course:
+        id: CSE 130
+        title: Programming Languages
+      - course:
+        id: CSE 158
+        title: Recommender Systems and Web Mining
+      - course:
         id: CSE 170
         title: Interaction Design
       - course:
         id: ECE 140
         title: The Art of Product Engineering
+      - course:
+        id: ENG 100D
+        title: Design for Development
       - course:
         id: MATH 184
         title: Combinatorics and Graph Theory
@@ -110,6 +116,30 @@ projects:
 #    conference: Addison-Wesley, 1968
 
 extracurriculars:
+  - extracurricular:
+    org: Triton Software Engineering
+    location: San Diego, CA
+    roles:
+      - role:
+        title: President
+        time: May 2018 - Present
+        details:
+          - bullet:
+            text: Partner with non-profits to engineer solutions for unique organizational needs and expand reach and impact.
+          - bullet:
+            text: Manage day-to-day administration and oversee the specification, development, and execution of each project.
+      - role:
+        title: Project Manager
+        time: January 2018 - June 2018
+        details:
+          - bullet:
+            text: Led a team of software developers in implementing a series of technical projects for social good; followed Agile methodology.
+          - bullet:
+            text: Created <a href="https://github.com/sumeet-bansal/tse-training/">a structured lesson plan</a> to teach team members web development with the MEAN stack.
+          - bullet:
+            text: Centralized and digitized medical records for a pop-up health clinic program in areas with limited resources (e.g. Tijuana).
+          - bullet:
+            text: Created a market evaluation tool for community stakeholders and ethnic grocers to improve the urban food environment in San Diego.
   - extracurricular:
     org: Students for the Exploration and Discovery of Space (SEDS)
     location: San Diego, CA
