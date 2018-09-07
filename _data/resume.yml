@@ -41,6 +41,22 @@ education:
 
 experience:
   - exp:
+    org: IBM Watson Health
+    location: Milwaukee, WI
+    roles:
+      - role:
+        title: Software Development Intern
+        time: June 2018 - September 2018
+        details:
+          - bullet:
+            text: Reworked continuous integration system to include automated remote unit testing with report generation and brought test harness up to federal standards.
+          - bullet:
+            text: Developed a data integrity project to ensure patient data isn't being mutated by the program.
+          - bullet:
+            text: Developed a data transformation tool for patient data to fix a critical compatibility issue.
+          - bullet:
+            text: Designed a proof-of-concept blockchain with the premise of smart contracts for pharmaceutical prescriptions.
+  - exp:
     org: Actiance
     location: Redwood City, CA
     roles:
@@ -167,4 +183,4 @@ skills:
     incl: Java, Python, C, C++, JavaScript, SQL, R, ARM Assembly, Shell
   - skillset:
     name: Technologies/Frameworks
-    incl: MongoDB, Node.js, Express.js, D3.js, Django, Flask, Git
+    incl: Jenkins, MongoDB, Node.js, Express.js, D3.js, Django, Flask, Git
