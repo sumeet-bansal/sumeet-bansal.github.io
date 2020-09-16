@@ -1,0 +1,12 @@
+## Reading List, September 2020
+
+#### Logic, Issue 11: ["Built to Last" (Mar Hicks)](https://logicmag.io/care/built-to-last/)
+> COBOL is a “problem-oriented” language, whose structure was designed around the goals of business and administrative users, instead of being maximally flexible for the kind of complex mathematical problems that scientific users would need to solve. The main architect of COBOL, Jean Sammet, then a researcher at Sylvania Electric and later a manager at IBM, wrote, “It was certainly intended (and expected) that the language could be used by novice programmers and read by management.”
+
+> Ironically, this accessibility is one of the reasons that COBOL was denigrated. It is not simply that the language is old; so are many infrastructural programming languages. Take the C programming language: it was created in 1972, but as one of the current COBOL programmers I interviewed pointed out, nobody makes fun of it or calls it an “old dead language” the way people do with COBOL.
+
+> In a field that has elevated boy geniuses and rockstar coders, obscure hacks and complex black-boxed algorithms, it’s perhaps no wonder that a committee-designed language meant to be easier to learn and use—and which was created by a team that included multiple women in positions of authority—would be held in low esteem. But modern computing has started to become undone, and to undo other parts of our societies, through the field’s high opinion of itself, and through the way that it concentrates power into the hands of programmers who mistake social, political, and economic problems for technical ones, often with disastrous results.
+
+> Older systems have value, and constantly building new technological systems for short-term profit at the expense of existing infrastructure is not progress. In fact, it is among the most regressive paths a society can take.
+
+> In order to care for technological infrastructure, we need maintenance engineers, not just systems designers—and that means paying for people, not just for products. COBOL was never meant to cut programmers out of the equation. But as state governments have moved to slash their budgets, they’ve been less and less inclined to pay for the labor needed to maintain critical systems. Many of the people who should have been on payroll to maintain and update the COBOL unemployment systems in states such as New Jersey have instead been laid off due to state budget cuts. As a result, those systems can become fragile, and in a crisis, they’re liable to collapse due to lack of maintenance. 
