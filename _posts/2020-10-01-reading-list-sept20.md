@@ -1,5 +1,7 @@
 ## Reading List, September 2020
 
+#### [Bessemer Venture Partners Memos](https://www.bvp.com/memos)
+
 #### *Logic*, Issue 11: ["Built to Last" (Mar Hicks)](https://logicmag.io/care/built-to-last/)
 > COBOL is a “problem-oriented” language, whose structure was designed around the goals of business and administrative users, instead of being maximally flexible for the kind of complex mathematical problems that scientific users would need to solve. The main architect of COBOL, Jean Sammet, then a researcher at Sylvania Electric and later a manager at IBM, wrote, “It was certainly intended (and expected) that the language could be used by novice programmers and read by management.”
 
