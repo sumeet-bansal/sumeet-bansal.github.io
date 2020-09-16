@@ -13,3 +13,5 @@
 > In modern computer systems, a great many of the layers are open-source, and can be understood directly by reading the implementation.
 
 > When I worked at Oracle (following the Ksplice acquisition), I talked with some Solaris kernel engineers there, and learned that they had taken this kind of approach even further. They apparently had an explicit goal of a 100% rate of root-causing kernel crashes based on a single crash report. In order to strive for this goal they had built a lot of elaborate crash-reporting and debugging technology — it wasn’t just raw thinking hard about bugs — but at root I think this goal comes from the deep belief that their system, while complex, is understandable and mostly deterministic, and that they have the ability to reason about it. I found this story pretty inspiring.
+
+#### ["Kanye West Says He’s Done With Trump—Opens Up About White House Bid, Damaging Biden And Everything In Between" (Randall Lane)](https://www.forbes.com/sites/randalllane/2020/07/08/kanye-west-says-hes-done-with-trump-opens-up-about-white-house-bid-damaging-biden-and-everything-in-between/)
