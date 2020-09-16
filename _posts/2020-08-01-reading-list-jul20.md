@@ -1,0 +1,15 @@
+## Reading List, July 2020
+
+#### *Communications of the ACM*, August 1984: ["Reflections on Trusting Trust" (Ken Thompson)](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
+> The moral is obvious. You can't trust code that you did not totally create yourself. (Especially code from companies that employ people like me.) No amount of source-level verification or scrutiny will protect you from using untrusted code. In demonstrating the possibility of this kind of attack, I picked on the C compiler. I could have picked on any program-handling program such as an assembler, a loader, or even hardware microcode. As the level of program gets lower, these bugs will be harder and harder to detect. A well-installed microcode bug will be almost impossible to detect. 
+
+#### ["Computers can be understood" (Nelson Elhage)](https://blog.nelhage.com/post/computers-can-be-understood/)
+> This belief is, for me, not some abstruse theoretical assertion, but a deeply felt belief that essentially any question I might care to ask (about computers) has a comprehensible answer which is accessible with determined exploration and learning.
+
+> In some ways, this belief feels radical today. Modern software and hardware systems contain almost unimaginable complexity amongst many distinct layers, each building atop each other. It is common — and substantially correct — to observe that no single human understands all of the layers in, say, a modern web application, starting from the transistors and silicon up through micro-architecture, the CPU instruction set, the OS kernel, the user libraries, the compilers, the web browser, and Javascript VM, the Javascript libraries, and the application code, not even to mention all the network services invoked in loading that code.
+
+> At core, computers are built on a set of (mostly) deterministic foundations, which follow strict rules at each tick of the clock. We built layers upon layers of abstractions upon those foundations, each of which, as well, behaves in a (mostly) reproducible and deterministic way based on the abstractions at the previous level...all behaviors can be understood by digging through enough layers.
+
+> In modern computer systems, a great many of the layers are open-source, and can be understood directly by reading the implementation.
+
+> When I worked at Oracle (following the Ksplice acquisition), I talked with some Solaris kernel engineers there, and learned that they had taken this kind of approach even further. They apparently had an explicit goal of a 100% rate of root-causing kernel crashes based on a single crash report. In order to strive for this goal they had built a lot of elaborate crash-reporting and debugging technology — it wasn’t just raw thinking hard about bugs — but at root I think this goal comes from the deep belief that their system, while complex, is understandable and mostly deterministic, and that they have the ability to reason about it. I found this story pretty inspiring.
