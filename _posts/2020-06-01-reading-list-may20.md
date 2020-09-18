@@ -1,6 +1,6 @@
 ## Reading List, May 2020
 
-#### ["Five NBA things I like and don't like, including the Bull's premature end" (Zach Lowe)](https://www.espn.com/nba/story/_/id/29191361/five-nba-things-like-including-chicago-bulls-premature-end)
+#### ["Five NBA things I like and don't like, including the Bull's premature end" (Zach Lowe)](https://outline.com/eeejUg)
 > With precious few exceptions, great teams have a life cycle. They gain experience, win a lot, age, and get bad.
 
 > It must be tempting to cut bait on a championship-level core early in its descent instead of waiting until it's obvious it can no longer contend. It is an opportunity to look smart any technocrat GM would relish on some level. But the chances of nailing that transitional rebuild are too small to justify ripping apart a champion with any nontrivial chance to win again. Doing so dishonors that champion. The management of the 1997-98 Chicago Bulls -- beginning and ending with Jerry Reinsdorf, the owner -- dishonored that team.
