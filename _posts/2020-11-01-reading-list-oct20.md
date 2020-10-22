@@ -10,3 +10,5 @@
 #### *The Athletic*: ["'I really am not into basketball': How a gambler won $250,000 making free throws" (Andy McCullough)](https://theathletic.com/2114179/2020/10/06/i-really-am-not-into-basketball-how-a-gambler-won-250000-making-free-throws)
 
 #### *Towards Data Science*: ["Data Observability: The Next Frontier of Data Engineering" (Barr Moses)](https://towardsdatascience.com/data-observability-the-next-frontier-of-data-engineering-f780feb874b)
+
+#### ["PolicyKit: Building Governance in Online Communities"](https://policykit.org/static/policyengine/pdf/policykit_uist2020.pdf)
