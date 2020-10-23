@@ -12,3 +12,24 @@
 #### *Towards Data Science*: ["Data Observability: The Next Frontier of Data Engineering" (Barr Moses)](https://towardsdatascience.com/data-observability-the-next-frontier-of-data-engineering-f780feb874b)
 
 #### ["PolicyKit: Building Governance in Online Communities"](https://policykit.org/static/policyengine/pdf/policykit_uist2020.pdf)
+
+#### *Because Internet: Understanding the New Rules of Language* (Gretchen McCulloch)
+> I also heard from several people who use the Dvorak keyboard, where the home row begins with vowels rather than ASDF, who reported that they just don’t bother keysmashing anymore at all because their layout makes it socially illegible...It’s not just that we make patterns. It’s that even when we’re not trying to make patterns, when we think we’re just a billion monkeys mashing incoherently on a billion keyboards, we’re social monkeys—we can’t help but notice each other and respond to each other.
+
+p. 7
+
+> Chambers figured that children learn “zee” from the alphabet song and American children’s television programs like Sesame Street, but when they get older, they learn that “zed” is associated with Canadian identity and switch. Indeed, noted Chambers, “zed” is one of the first things that American immigrants to Canada change about their speech, “because calling it ‘zee’ unfailingly draws comments from the people they are talking to.”
+
+p. 40
+
+> Tools like spellcheck, grammarcheck, autocomplete, and speech-to-text impose someone’s ideas of the rules of English automatically—invisible authorities that we can defy but not avoid...“Standard” language and “correct” spelling are collective agreements, not eternal truths, and collective agreements can change...At a societal level, it’s a case of bias-laundering through technology that serves to reinforce people and names that are already powerful.
+
+p. 45-46
+
+> McSweeney reasoned that “lol” must be conveying a message about the phrase as a whole, a meaning that’s compatible with flirting, softening, and empathy but not with love, directness, and checking in...Some statements are direct; others wrap their meaning in layers. Including “lol” indicates there’s a second layer of meaning to be found, telling the recipient to look beyond the literal words you’re saying.
+
+p. 105
+
+> Even if this increased attention to typographical tone of voice did mean the decline of standard punctuation, I’d gladly accept the decline of standards that were arbitrary and elitist in the first place in favor of being able to better connect with my fellow humans. After all, a red pen will never love me back.
+
+p. 125
