@@ -33,3 +33,5 @@ p. 105
 > Even if this increased attention to typographical tone of voice did mean the decline of standard punctuation, I’d gladly accept the decline of standards that were arbitrary and elitist in the first place in favor of being able to better connect with my fellow humans. After all, a red pen will never love me back.
 
 p. 125
+
+#### ["Performance as hardware utilization"](https://buttondown.email/nelhage/archive/f5f191bc-c180-4418-bed8-2c6d6270f3f0) (Nelson Elhage)
