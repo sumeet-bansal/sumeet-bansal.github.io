@@ -37,3 +37,5 @@ p. 125
 #### ["Performance as hardware utilization"](https://buttondown.email/nelhage/archive/f5f191bc-c180-4418-bed8-2c6d6270f3f0) (Nelson Elhage)
 
 #### *Software Engineering Daily*: [Federated Learning with Mike Lee Williams](https://softwareengineeringdaily.com/2020/10/23/federated-learning-with-mike-lee-williams/)
+
+#### ["Protocols, Not Platforms: A Technological Approach to Free Speech (Mike Masnick)](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech)
