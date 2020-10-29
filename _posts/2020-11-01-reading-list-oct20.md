@@ -38,4 +38,4 @@ p. 125
 
 #### *Software Engineering Daily*: [Federated Learning with Mike Lee Williams](https://softwareengineeringdaily.com/2020/10/23/federated-learning-with-mike-lee-williams/)
 
-#### ["Protocols, Not Platforms: A Technological Approach to Free Speech (Mike Masnick)](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech)
+#### ["Protocols, Not Platforms: A Technological Approach to Free Speech"](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech) (Mike Masnick)
