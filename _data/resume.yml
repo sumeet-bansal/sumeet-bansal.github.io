@@ -1,45 +1,75 @@
 name: Sumeet Bansal
-tagline: Student Developer
+tagline: Software Engineer
 
 education:
   - edu:
     degree: Computer Science, BS; Minor in Mathematics
     university: University of California, San Diego
     time: 2016 - 2020
-    description: Provost Honors.
-    coursework:
-      - course:
-        id: CSE 100
-        title: Advanced Data Structures
-      - course:
-        id: CSE 101
-        title: Design and Analysis of Algorithms
-      - course:
-        id: CSE 105
-        title: Theory of Computability
-      - course:
-        id: CSE 130
-        title: Programming Languages
-      - course:
-        id: CSE 158
-        title: Recommender Systems and Web Mining
-      - course:
-        id: CSE 170
-        title: Interaction Design
-      - course:
-        id: ECE 140
-        title: The Art of Product Engineering
-      - course:
-        id: ENG 100D
-        title: Design for Development
-      - course:
-        id: MATH 184
-        title: Combinatorics and Graph Theory
-      - course:
-        id: MATH 189
-        title: Exploratory Data Analysis and Inference
+    # description: Provost Honors.
+    # coursework:
+    #   - course:
+    #     id: CSE 100
+    #     title: Advanced Data Structures
+    #   - course:
+    #     id: CSE 101
+    #     title: Design and Analysis of Algorithms
+    #   - course:
+    #     id: CSE 105
+    #     title: Theory of Computability
+    #   - course:
+    #     id: CSE 130
+    #     title: Programming Languages
+    #   - course:
+    #     id: CSE 158
+    #     title: Recommender Systems and Web Mining
+    #   - course:
+    #     id: CSE 170
+    #     title: Interaction Design
+    #   - course:
+    #     id: ECE 140
+    #     title: The Art of Product Engineering
+    #   - course:
+    #     id: ENG 100D
+    #     title: Design for Development
+    #   - course:
+    #     id: MATH 184
+    #     title: Combinatorics and Graph Theory
+    #   - course:
+    #     id: MATH 189
+    #     title: Exploratory Data Analysis and Inference
 
 experience:
+  - exp:
+    org: Palantir
+    location: New York, NY
+    roles:
+      - role:
+        title: Software Engineer
+        time: May 2020 - September 2023
+        details:
+          - bullet:
+            text: Developed the <a href="https://www.palantir.com/docs/foundry/time-series/time-series-overview">time series</a> product, which ingests large datasets (up to tens of Terabytes each) containing millions of unique time series and enables users to execute complex queries composed of transforms and aggregations against those time series within seconds.
+          - bullet:
+            text: The product supports business-critical workflows at global institutions like oil-and-gas supermajors, automotive and aerospace manufacturers, and national health agencies. For example, Airbus instruments its aircraft with thousands of sensors recording measurements at millisecond frequency, for every flight, across their fleet, and uses our time series product to manage that volume of sensor data and plan preventative aircraft maintenance. Clients frequently use time series to monitor the health of their assets in real-time, e.g. British Petroleum and its energy platforms, several national health agencies and their COVID responses.
+          - bullet:
+            text: "I worked extensively across the product stack: multiple Java services, a Rust service, a Python library, and a Typescript/React front-end."
+          - bullet:
+            text: Owned streaming workflows for time series, a functionality highly-demanded from current and prospective customers. The architecture for streaming workflows barely existed as a skeleton; I shipped tens of thousands of lines of code to production, wrote documentation, added monitoring and alerting, collaborated with early adopters to iron out issues and address pain points, released the feature, and enabled our largest customer to migrate from their custom streaming solution. As clients scaled their streaming usage, I profiled and analyzed runtime to improve stability (e.g. memory usage) and optimize performance.
+          - bullet:
+            text: Enabled usage-based pricing for time series and unlocked millions of dollars in new contract value by implementing compute reporting for time series services and updating all significant time series clients in the Foundry platform one-by-one to pass along compute attribution to time series.
+          - bullet:
+            text: Reduced cloud costs by several hundred thousand dollars annually by building the next-generation of time series architecture, which would be more tightly integrated with the Foundry platform and write orders of magnitude less metadata, eliminating the need for dedicated Cassandra clusters on hundreds of customer deployments.
+          - bullet:
+            text: Contributed to the support rotation, where I responded to pages and investigated and fixed time series issues in the field, such as security vulnerabilities, product bugs, configuration errors, performance issues, and complex system failures. I closed over 1000 pages. While on support, I was responsible for maintaining strict SLAs across dozens of customer deployments.
+      - role:
+        title: Software Engineer Intern
+        time: June 2019 - September 2019
+        details:
+          - bullet:
+            text: Worked on a a permissioned registry service to store user-authored code called <a href="https://www.palantir.com/docs/foundry/functions/overview/">Functions</a>, and Function metadata and specifications (e.g. input/output data types, documentation, location of Function code). Designed and implemented a search API for published Functions in Java using Cassandra and Elasticsearch.
+          - bullet:
+            text: Developed a custom TypeScript logger conforming to the internal service specification, e.g. integration with internal authentication service, tracing by Function execution context, support for log rotation.
   - exp:
     org: IBM Watson Health
     location: Milwaukee, WI
@@ -47,43 +77,43 @@ experience:
       - role:
         title: Software Development Intern
         time: June 2018 - September 2018
-        details:
-          - bullet:
-            text: Reworked continuous integration system to include automated remote unit testing with report generation and brought test harness up to federal standards.
-          - bullet:
-            text: Developed a data integrity project to ensure patient data isn't being mutated by the program.
-          - bullet:
-            text: Developed a data transformation tool for patient data to fix a critical compatibility issue.
-          - bullet:
-            text: Designed a proof-of-concept blockchain with the premise of smart contracts for pharmaceutical prescriptions.
+        # details:
+        #   - bullet:
+        #     text: Reworked continuous integration system to include automated remote unit testing with report generation and brought test harness up to federal standards.
+        #   - bullet:
+        #     text: Developed a data integrity project to ensure patient data isn't being mutated by the program.
+        #   - bullet:
+        #     text: Developed a data transformation tool for patient data to fix a critical compatibility issue.
+        #   - bullet:
+        #     text: Designed a proof-of-concept blockchain with the premise of smart contracts for pharmaceutical prescriptions.
   - exp:
     org: Actiance
     location: Redwood City, CA
     roles:
-    - role:
-      title: Product Management Intern
-      time: June 2017 - September 2017
-      details:
-        - bullet:
-          text: Worked with Program Management to migrate programs to the BigPicture application for improved risk assessment, swim lane progress updates and milestone planning.
+    # - role:
+    #   title: Product Management Intern
+    #   time: June 2017 - September 2017
+    #   details:
+    #     - bullet:
+    #       text: Worked with Program Management to migrate programs to the BigPicture application for improved risk assessment, swim lane progress updates and milestone planning.
     - role:
       title: Engineering R&D Intern
       time: June 2017 - September 2017
-      details:
-        - bullet:
-          text: Led a team of three interns in developing <a href="https://github.com/sumeet-bansal/lighthouse">an independent anomaly detection project</a>.
-        - bullet:
-          text: Developed a diagnostic service that significantly shortened development and deployment cycles by ensuring parity across multiple product sites' server configurations.
-        - bullet:
-          text: Automated processes for generating data stores of entire product sites' server configurations.
-        - bullet:
-          text: Created a flexible MongoDB-based query engine that generates detailed statistical server analyses and later migrated the entire project to a fully functional SQL-based implementation.
-        - bullet:
-          text: Integrated the query engine with a responsive web interface using AngularJS interacting with a Java servlet.
-        - bullet:
-          text: Oversaw company-wide deployment and adoption across different teams, domestic and international (e.g. Engineering, Network Operations, QA).
-        - bullet:
-          text: Presented well-received demos to many senior executives, including the CEO. Incorporated feedback and added requested functionality for specific use cases.
+      # details:
+      #   - bullet:
+      #     text: Led a team of three interns in developing <a href="https://github.com/sumeet-bansal/lighthouse">an independent anomaly detection project</a>.
+      #   - bullet:
+      #     text: Developed a diagnostic service that significantly shortened development and deployment cycles by ensuring parity across multiple product sites' server configurations.
+      #   - bullet:
+      #     text: Automated processes for generating data stores of entire product sites' server configurations.
+      #   - bullet:
+      #     text: Created a flexible MongoDB-based query engine that generates detailed statistical server analyses and later migrated the entire project to a fully functional SQL-based implementation.
+      #   - bullet:
+      #     text: Integrated the query engine with a responsive web interface using AngularJS interacting with a Java servlet.
+      #   - bullet:
+      #     text: Oversaw company-wide deployment and adoption across different teams, domestic and international (e.g. Engineering, Network Operations, QA).
+      #   - bullet:
+      #     text: Presented well-received demos to many senior executives, including the CEO. Incorporated feedback and added requested functionality for specific use cases.
   - exp:
     org: Zscaler
     location: San Jose, CA
@@ -91,39 +121,39 @@ experience:
       - role:
         title: Emerging Technologies Intern
         time: June 2015 - August 2015
-        details:
-          - bullet:
-            text: Developed a web visualization of global cyberthreats using live server data.
-          - bullet:
-            text: Processed server data stream and systematically classified and prioritized various cyberthreats.
-          - bullet:
-            text: Used the Google Maps API to project parsed threat data onto a constantly-updating map.
+        # details:
+        #   - bullet:
+        #     text: Developed a web visualization of global cyberthreats using live server data.
+        #   - bullet:
+        #     text: Processed server data stream and systematically classified and prioritized various cyberthreats.
+        #   - bullet:
+        #     text: Used the Google Maps API to project parsed threat data onto a constantly-updating map.
 
-projects:
-  - project:
-    title: last.fm spelunker
-    link:
-    github: sumeet-bansal/last.fm-spelunker
-    details:
-      - bullet:
-        text: Generates an exhaustive SQL database of a user's listening history and related info through the last.fm API.
-      - bullet:
-        text: Identifies historical patterns in listening habits (e.g. seasonal preferences for artists or genres).
-      - bullet:
-        text: Graphs listening statistics, long-term trends (through streamgraphs), and connections between related artists (through hierarchical edge bundles) using the D3.js data visualization library.
-  - project:
-    title: Triton Scheduler
-    link:
-    github: sumeet-bansal/triton-scheduler
-    details:
-      - bullet:
-        text: A Chrome extension to easily populate Google Calendars with a user's academic schedule for the quarter.
-      - bullet:
-        text: Uses web scraping to parse and clean schedule data from the online WebReg class registration tool.
-      - bullet:
-        text: Handles the user authentication and authorization process through the OAuth 2.0 protocol.
-      - bullet:
-        text: Adds all academic events from the registration tool to Google Calendar via the Google Calendar API.
+# projects:
+#   - project:
+#     title: last.fm spelunker
+#     link:
+#     github: sumeet-bansal/last.fm-spelunker
+#     details:
+#       - bullet:
+#         text: Generates an exhaustive SQL database of a user's listening history and related info through the last.fm API.
+#       - bullet:
+#         text: Identifies historical patterns in listening habits (e.g. seasonal preferences for artists or genres).
+#       - bullet:
+#         text: Graphs listening statistics, long-term trends (through streamgraphs), and connections between related artists (through hierarchical edge bundles) using the D3.js data visualization library.
+#   - project:
+#     title: Triton Scheduler
+#     link:
+#     github: sumeet-bansal/triton-scheduler
+#     details:
+#       - bullet:
+#         text: A Chrome extension to easily populate Google Calendars with a user's academic schedule for the quarter.
+#       - bullet:
+#         text: Uses web scraping to parse and clean schedule data from the online WebReg class registration tool.
+#       - bullet:
+#         text: Handles the user authentication and authorization process through the OAuth 2.0 protocol.
+#       - bullet:
+#         text: Adds all academic events from the registration tool to Google Calendar via the Google Calendar API.
 
 #publications:
 #  - paper:
@@ -131,56 +161,56 @@ projects:
 #    authors: Donald E. Knuth
 #    conference: Addison-Wesley, 1968
 
-extracurriculars:
-  - extracurricular:
-    org: Triton Software Engineering
-    location: San Diego, CA
-    roles:
-      - role:
-        title: President
-        time: May 2018 - Present
-        details:
-          - bullet:
-            text: Partner with non-profits to engineer solutions for unique organizational needs and expand reach and impact.
-          - bullet:
-            text: Manage day-to-day administration and oversee the specification, development, and execution of each project.
-      - role:
-        title: Project Manager
-        time: January 2018 - June 2018
-        details:
-          - bullet:
-            text: Led a team of software developers in implementing a series of technical projects for social good; followed Agile methodology.
-          - bullet:
-            text: Created <a href="https://github.com/sumeet-bansal/tse-training/">a structured lesson plan</a> to teach team members web development with the MEAN stack.
-          - bullet:
-            text: Centralized and digitized medical records for a pop-up health clinic program in areas with limited resources (e.g. Tijuana).
-          - bullet:
-            text: Created a market evaluation tool for community stakeholders and ethnic grocers to improve the urban food environment in San Diego.
-  - extracurricular:
-    org: Students for the Exploration and Discovery of Space (SEDS)
-    location: San Diego, CA
-    roles:
-      - role:
-        title: Webmaster
-        time: January 2018 - Present
-        details:
-          - bullet:
-            text: Responsible for the design and maintenance of the organization's website (<a href="https://sedsucsd.org">sedsucsd.org</a>).
-      - role:
-        title: Software Developer
-        time: September 2017 - March 2018
-        details:
-          - bullet:
-            text: Member of the Colossus project, a NASA-funded static fire test stand having a net worth of $330,000.
-          - bullet:
-            text: Worked on the data acquisition system to automate the sequence of actions required to obtain reliable thrust readings, design a highly-redundant system with numerous background and safety checks, and develop data loggers and a responsive user interface.
-          - bullet:
-            text: Set up a web server and local website to enable real-time monitoring of the Colossus system.
+# extracurriculars:
+#   - extracurricular:
+#     org: Triton Software Engineering
+#     location: San Diego, CA
+#     roles:
+#       - role:
+#         title: President
+#         time: May 2018 - Present
+#         details:
+#           - bullet:
+#             text: Partner with non-profits to engineer solutions for unique organizational needs and expand reach and impact.
+#           - bullet:
+#             text: Manage day-to-day administration and oversee the specification, development, and execution of each project.
+#       - role:
+#         title: Project Manager
+#         time: January 2018 - June 2018
+#         details:
+#           - bullet:
+#             text: Led a team of software developers in implementing a series of technical projects for social good; followed Agile methodology.
+#           - bullet:
+#             text: Created <a href="https://github.com/sumeet-bansal/tse-training/">a structured lesson plan</a> to teach team members web development with the MEAN stack.
+#           - bullet:
+#             text: Centralized and digitized medical records for a pop-up health clinic program in areas with limited resources (e.g. Tijuana).
+#           - bullet:
+#             text: Created a market evaluation tool for community stakeholders and ethnic grocers to improve the urban food environment in San Diego.
+#   - extracurricular:
+#     org: Students for the Exploration and Discovery of Space (SEDS)
+#     location: San Diego, CA
+#     roles:
+#       - role:
+#         title: Webmaster
+#         time: January 2018 - Present
+#         details:
+#           - bullet:
+#             text: Responsible for the design and maintenance of the organization's website (<a href="https://sedsucsd.org">sedsucsd.org</a>).
+#       - role:
+#         title: Software Developer
+#         time: September 2017 - March 2018
+#         details:
+#           - bullet:
+#             text: Member of the Colossus project, a NASA-funded static fire test stand having a net worth of $330,000.
+#           - bullet:
+#             text: Worked on the data acquisition system to automate the sequence of actions required to obtain reliable thrust readings, design a highly-redundant system with numerous background and safety checks, and develop data loggers and a responsive user interface.
+#           - bullet:
+#             text: Set up a web server and local website to enable real-time monitoring of the Colossus system.
 
 skills:
   - skillset:
     name: Languages
-    incl: Java, Python, C, C++, JavaScript, SQL, R, ARM Assembly, Shell
+    incl: Java, Python, SQL, TypeScript/JavaScript, Rust, Shell
   - skillset:
     name: Technologies/Frameworks
-    incl: Jenkins, MongoDB, Node.js, Express.js, D3.js, Django, Flask, Git
+    incl: CI/CD, Docker, Node.js, React, Cassandra
