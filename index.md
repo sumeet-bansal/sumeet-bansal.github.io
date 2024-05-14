@@ -11,4 +11,4 @@ I recently spent three and a half years as a software engineer at [Palantir](htt
 
 At UCSD I co-founded [ACM UCSD](https://acmucsd.com/), an ACM chapter that became UCSD's largest engineering student org, with 1000+ members, weeks after launch; was a DJ and computer engineer at [KSDT](https://ksdt.ucsd.edu/), UCSD's college radio station; and was a member of [Triton Software Engineering](https://tse.ucsd.edu/), a campus organization that partners with non-profits to design and develop thoughtful mobile and web apps for social good.
 
-You can reach me at [`sumeetbansal@gmail.com`](mailto:sumeetbansal@gmail.com)
+You can reach me at [`sumeetbansal@gmail.com`](mailto:sumeetbansal@gmail.com).
