@@ -7,7 +7,7 @@ locale: en_US
 
 # left block images
 background:
-  homepage: images/home.png
+  homepage: images/bold-and-brash.jpg
   post-list: images/bold-and-brash.jpg
   default-post: images/bold-and-brash.jpg
 
